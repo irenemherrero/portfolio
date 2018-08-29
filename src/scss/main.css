@@ -22,7 +22,8 @@ body {
   width: 100vw;
   height: 80px;
   display: flex;
-  position: fixed; }
+  position: fixed;
+  z-index: 100; }
 
 .containerMenu {
   position: fixed;
@@ -37,6 +38,17 @@ body {
   animation-name: menu;
   animation-duration: 1s;
   animation-iteration-count: 1; }
+
+@keyframes menu {
+  from {
+    opacity: 0;
+    width: 0%; }
+  to {
+    opacity: 1;
+    width: 100%; } }
+
+.hidden-hidden {
+  display: none; }
 
 .hidden {
   position: fixed;
@@ -59,14 +71,6 @@ body {
     opacity: 0;
     width: 0%; } }
 
-@keyframes menu {
-  from {
-    opacity: 0;
-    width: 0%; }
-  to {
-    opacity: 1;
-    width: 100%; } }
-
 .linkMenu {
   text-decoration: none;
   margin: 10px; }
@@ -76,6 +80,9 @@ body {
   margin: 0;
   padding: 0;
   display: flex; }
+
+.hiddenMenu {
+  display: none; }
 
 .container-footer {
   position: relative;
@@ -353,7 +360,8 @@ body {
   border: 10px outset white;
   display: block;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  position: relative; }
 
 .font-pre-title {
   position: relative;

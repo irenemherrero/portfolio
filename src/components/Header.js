@@ -6,17 +6,19 @@ class Header extends Component {
         super(props);
 
         this.state = {
-            openMenu: "hidden",
+            openMenu: "hidden-hidden",
+            // openList: "hidden-hidden"
         }
         this.handleMenu = this.handleMenu.bind(this);
     }
-
+//Arreglar esto!!
     handleMenu() {
-        if (this.state.openMenu === "hidden") {
+        if (this.state.openMenu === "hidden-hidden" || "hidden") {
             this.setState({
                 openMenu: "containerMenu",
+                // openList: "listMenu",
             })
-        } else {
+        } else if(this.state.openMenu === "containerMenu"){
             this.setState({
                 openMenu: "hidden",
             })

@@ -31,7 +31,21 @@
   animation-duration: 1s;
   animation-iteration-count: 1;
 }
+@keyframes menu {
+  from {
+      opacity: 0;
+      width: 0%;
 
+  }
+  to {
+      opacity: 1;
+      width: 100%;
+
+  }
+}
+.hidden-hidden{
+  display:none;
+}
 .hidden{
   position: fixed;
   padding: 0px;
@@ -58,18 +72,7 @@
   }
 }
 
-@keyframes menu {
-  from {
-      opacity: 0;
-      width: 0%;
 
-  }
-  to {
-      opacity: 1;
-      width: 100%;
-
-  }
-}
 .linkMenu{
   text-decoration: none;
   margin: 10px;
@@ -80,4 +83,7 @@
   margin:0;
   padding: 0;
   display: flex;
+}
+.hiddenMenu{
+display:none;
 }
