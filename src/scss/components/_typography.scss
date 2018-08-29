@@ -1,9 +1,24 @@
 .font-pre-title{
-  color: $font-color-2;
+  color: $font-color-1;
   font-size: $font-size-xl;
   font-family: $font-family-1;
   font-weight: $font-weight-medium;
+  letter-spacing: .15em;
   margin: 0;
+  animation-name: appear;
+  animation-timing-function: ease;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes appear {
+  from {
+      color: $font-color-1;
+  }
+  to {
+      color: $font-color-2; 
+  }
 }
 
 .font-big-title {
@@ -14,17 +29,25 @@
 }
 
 .font-big-title-smaller {
-  color: $font-color-6;
-  font-size: $font-size-medium;
-  font-family: $font-family-1;
+  color: $font-color-1;
+  font-size: $font-size-med;
+  font-family: $font-family-2;
   font-weight: $font-weight-medium;
-}
+  transition: color ease .8s;
+  &:hover {
+      color: $font-color-6;
+  }
+}  
 
 .font-menu {
   color: $font-color-1;
-  font-size: $font-size-med;
+  font-size: $font-size-big;
   font-family: $font-family-1;
   font-weight: $font-weight-regular;
+  transition: color ease .5s;
+  &:hover {
+    color: $font-color-6;
+  }
 }
 
 // .font-medium-title {

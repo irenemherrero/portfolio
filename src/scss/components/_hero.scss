@@ -1,39 +1,54 @@
 .hero-text-container {
   position: absolute;
+  width: 500px;
   left: 50%;
   top: 20%;
   transform: translate(-50%, 0%);
-  bottom: 0;
 }
 
 .big-title {
   position: relative;
-  margin: 0;
+  width: 100%;
   text-align: left;
   color: $font-color-6;
+}
 
-  @media all and (min-width: 768px) {
-    width: 690px;
-    font-size: $font-size-gig-tab;
-  }
+.typewriter{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid $font-color-2; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
 
-  @media all and (min-width: 1280px) {
-    width: 730px;
-    font-size: $font-size-gig-desk;
-  }
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: $font-color-2; }
 }
 
 .photoMe{
   height: 225px;
+  margin: 30px;
   width: 225px;
   border-radius: 50%;
+  border: 3px solid white;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  
-    @media all and (min-width: 1280px) {
-      top: 40px;
-    }
+  transition: height, width, ease, 1s;
+  &:hover{
+    height: 50%;
+    width: 50%;
+  }
   }
 
   
