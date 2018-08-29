@@ -1,0 +1,39 @@
+.hero-text-container {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, 0%);
+  bottom: 0;
+}
+
+.big-title {
+  position: relative;
+  margin: 0;
+  text-align: left;
+  color: $font-color-6;
+
+  @media all and (min-width: 768px) {
+    width: 690px;
+    font-size: $font-size-gig-tab;
+  }
+
+  @media all and (min-width: 1280px) {
+    width: 730px;
+    font-size: $font-size-gig-desk;
+  }
+}
+
+.photoMe{
+  height: 225px;
+  width: 225px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+    @media all and (min-width: 1280px) {
+      top: 40px;
+    }
+  }
+
+  

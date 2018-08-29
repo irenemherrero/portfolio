@@ -1,0 +1,24 @@
+.container-footer {
+  position: relative;
+  background-color: $background-color-2;
+  height: 128px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-line-1 {
+  margin-top: 38px;
+  margin-bottom: 0;
+  padding: 7px;
+}
+
+.footer-line-2 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding: 7px;
+}
+
+.corazon {
+  color: $color-boton-1;
+}

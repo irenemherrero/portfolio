@@ -1,0 +1,81 @@
+.header_bg {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: $font-color-1;
+  position: relative;
+  background-position: center top;
+  background-size: cover;
+  display: flex;
+  align-content: center;
+}
+.menu{
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  position: fixed;
+}
+
+
+.containerMenu{
+  position: fixed;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  background-color: $font-color-6;
+  animation-name: menu;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.hidden{
+  position: fixed;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0%;
+  height: 80px;
+  background-color: $font-color-6;
+  animation-name: menu-out;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+@keyframes menu-out {
+  from {
+      opacity: 1;
+      width: 100%;
+
+  }
+  to {
+      opacity: 0;
+      width: 0%;
+
+  }
+}
+
+@keyframes menu {
+  from {
+      opacity: 0;
+      width: 0%;
+
+  }
+  to {
+      opacity: 1;
+      width: 100%;
+
+  }
+}
+.linkMenu{
+  text-decoration: none;
+  margin: 10px;
+}
+.listMenu{
+  list-style: none;
+  margin:0;
+  padding: 0;
+  display: flex;
+}

@@ -1,0 +1,85 @@
+.section-2 {
+  padding: 15px;
+  height: 624px;
+  background-color: $background-color-1;
+
+  @media all and (min-width: 768px) {
+    height: 397px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media all and (min-width: 768px) {
+    height: 427px;
+    padding: 60px 85px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.reasons-title {
+  margin: 15px auto 22.5px;
+  text-align: center;
+
+  @media all and (min-width: 768px) {
+    margin-top: 0;
+    margin-bottom: 45px;
+    height: 45px;
+    font-size: $font-size-xxl-tab;
+  }
+
+  @media all and (min-width: 1280px) {
+    font-size: $font-size-xxl-desk;
+  }
+}
+
+.container-all-reasons {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  @media all and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 278px 210px 280px;
+    grid-template-rows: 112px 165px;
+    grid-template-areas: "col1 col2 col3" "col4 col5 col6";
+    justify-content: center;
+  }
+
+  @media all and (min-width: 1280px) {
+    display: grid;
+    grid-template-columns: 360px 360px 360px;
+  }
+}
+
+.container-reason {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 22.5px;
+
+  @media all and (min-width: 768px) {
+    margin: 0;
+  }
+}
+
+.small-title-reason {
+  margin: 0;
+  padding: 3px;
+
+  @media all and (min-width: 768px) {
+    font-size: $font-size-xl-tab;
+  }
+}
+
+.paragraph {
+  text-align: center;
+  width: 180px;
+  height: 63px;
+  margin: 0;
+
+  @media all and (min-width: 768px) {
+    font-size: $font-size-big-tab;
+    height: 110px;
+  }
+}
