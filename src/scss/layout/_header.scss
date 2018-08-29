@@ -14,10 +14,12 @@
   height: 80px;
   display: flex;
   position: fixed;
+  z-index: 100;
 }
 
 .containerMenu{
   position: fixed;
+  z-index: 10;
   padding: 20px;
   display: flex;
   align-items: center;

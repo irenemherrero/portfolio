@@ -6,7 +6,7 @@ class Hero extends Component {
         return (
             <Fragment>
                 <div className="hero-text-container">
-                    <h1 className="font-pre-title">Junior Front-End Developer</h1>
+                    <h1 className="font-pre-title pre-title-effect">Junior Front-End Developer</h1>
                     <h2 className="big-title font-big-title typewriter">Soy Irene Mateo.</h2>
                     <img className="photoMe" src={photoMe} alt="error" />
                 </div>
