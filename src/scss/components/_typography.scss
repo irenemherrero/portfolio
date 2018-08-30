@@ -1,5 +1,4 @@
-.font-pre-title{
-  position: relative;
+.fontPreTitle{
   color: $font-color-1;
   font-size: $font-size-xl;
   font-family: $font-family-1;
@@ -7,25 +6,14 @@
   letter-spacing: .15em;
   margin: 0;
 }
-.font-big-title {
+.fontTitle {
   color: $font-color-6;
   font-size: $font-size-gig;
   font-family: $font-family-1;
   font-weight: $font-weight-medium;
 }
 
-.font-big-title-smaller {
-  color: $font-color-1;
-  font-size: $font-size-med;
-  font-family: $font-family-2;
-  font-weight: $font-weight-medium;
-  transition: color ease .8s;
-  &:hover {
-      color: $font-color-6;
-  }
-}  
-
-.font-menu {
+.fontItemMenu {
   color: $font-color-1;
   font-size: $font-size-big;
   font-family: $font-family-1;

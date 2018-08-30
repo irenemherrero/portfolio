@@ -1,18 +1,12 @@
-.hero-text-container {
+.heroTextContainer {
   position: absolute;
-  width: 500px;
+  width: 70%;
   left: 50%;
   top: 20%;
   transform: translate(-50%, 0%);
 }
 
-.big-title {
-  position: relative;
-  width: 100%;
-  text-align: left;
-  color: $font-color-6;
-}
-.pre-title-effect{
+.preTitleEffect{
   animation-name: appear;
   animation-timing-function: ease;
   animation-delay: 3s;
@@ -36,7 +30,7 @@
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
-    typing 3.5s steps(40, end),
+    typing 3s steps(40, end),
     blink-caret .75s step-end infinite;
 }
 /* The typing effect */
@@ -60,7 +54,6 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
 }
 
   

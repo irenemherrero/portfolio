@@ -7,23 +7,16 @@ body {
   height: 100vh;
   width: 100%; }
 
-.header_bg {
+.headerBackground {
   margin: 0;
   height: 100vh;
   width: 100%;
   background-color: #C61F3E;
-  position: relative;
-  background-position: center top;
-  background-size: cover;
-  display: flex;
-  align-content: center; }
+  position: relative; }
 
-.menu {
+.menuBar {
   width: 100vw;
-  height: 80px;
-  display: flex;
-  position: fixed;
-  z-index: 100; }
+  height: 80px; }
 
 .containerMenu {
   position: fixed;
@@ -47,7 +40,7 @@ body {
     opacity: 1;
     width: 100%; } }
 
-.hidden-hidden {
+.unactiveInitial {
   display: none; }
 
 .hidden {
@@ -81,7 +74,7 @@ body {
   padding: 0;
   display: flex;
   animation-name: list-in;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-iteration-count: 1; }
 
 @keyframes list-in {
@@ -198,7 +191,7 @@ body {
   height: 100px;
   border: 1px solid black; }
 
-.boton-hamburguesa {
+.buttonHamburger {
   width: 80px;
   height: 80px;
   background-color: #C61F3E;
@@ -212,115 +205,14 @@ body {
   display: flex;
   flex-grow: 1; }
 
-.flecha-abajo {
+.heroTextContainer {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 20px;
-  height: 11.7px; }
-
-.boton-go {
-  display: inline-block;
-  width: 76px;
-  height: 45px;
-  border-radius: 22.5px;
-  border: solid 2px #f26002;
-  position: relative;
-  margin-bottom: 30px;
-  transition: background-color ease 1s, transform ease 1s; }
-  .boton-go:hover {
-    background-color: #f26002;
-    transform: scale(1.2); }
-  @media all and (min-width: 768px) {
-    .boton-go {
-      width: 91px;
-      margin-bottom: 21px; } }
-
-.enlace-boton {
-  text-decoration: none;
-  color: #f26002;
-  left: 50%;
-  top: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  padding: 15px;
-  transition: color ease 1s; }
-  .enlace-boton:hover {
-    color: #fff; }
-
-.boton-more-reasons {
-  width: 184px;
-  height: 45px;
-  border-radius: 22.5px;
-  background-color: #f26002;
-  position: relative;
-  margin: auto;
-  transition: background-color ease 1s, transform ease 1s; }
-  .boton-more-reasons:hover {
-    background-color: #fff;
-    transform: scale(1.2);
-    border: 0.5px solid #f26002; }
-  @media all and (min-width: 768px) {
-    .boton-more-reasons {
-      grid-area: col5;
-      width: 210px; } }
-  @media all and (min-width: 1280px) {
-    .boton-more-reasons {
-      grid-area: col5;
-      width: 255px; } }
-
-.enlace-boton-naranja {
-  text-decoration: none;
-  left: 50%;
-  top: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  width: 180px;
-  text-align: center;
-  padding: 15px;
-  transition: color ease 1s; }
-  .enlace-boton-naranja:hover {
-    color: #f26002; }
-  @media all and (min-width: 768px) {
-    .enlace-boton-naranja {
-      font-size: 20px; } }
-
-.boton-subir {
-  height: 45px;
-  width: 45px;
-  background-color: #fff;
-  border-radius: 50%;
-  bottom: 85px;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  box-shadow: 1px 1px rgba(0, 0, 0, 0.29);
-  z-index: 2; }
-
-.flecha-arriba {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 20.6px;
-  height: 24px; }
-
-.hero-text-container {
-  position: absolute;
-  width: 500px;
+  width: 70%;
   left: 50%;
   top: 20%;
   transform: translate(-50%, 0%); }
 
-.big-title {
-  position: relative;
-  width: 100%;
-  text-align: left;
-  color: #FCFDFE; }
-
-.pre-title-effect {
+.preTitleEffect {
   animation-name: appear;
   animation-timing-function: ease;
   animation-delay: 3s;
@@ -345,7 +237,7 @@ body {
   /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em;
   /* Adjust as needed */
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite; }
 
 /* The typing effect */
 @keyframes typing {
@@ -369,11 +261,9 @@ body {
   border: 10px outset white;
   display: block;
   margin-left: auto;
-  margin-right: auto;
-  position: relative; }
+  margin-right: auto; }
 
-.font-pre-title {
-  position: relative;
+.fontPreTitle {
   color: #C61F3E;
   font-size: 24px;
   font-family: "M PLUS Rounded 1c", sans-serif;
@@ -381,28 +271,19 @@ body {
   letter-spacing: .15em;
   margin: 0; }
 
-.font-big-title {
+.fontTitle {
   color: #FCFDFE;
   font-size: 42px;
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 500; }
 
-.font-big-title-smaller {
-  color: #C61F3E;
-  font-size: 18px;
-  font-family: "Open Sans", serif;
-  font-weight: 500;
-  transition: color ease .8s; }
-  .font-big-title-smaller:hover {
-    color: #FCFDFE; }
-
-.font-menu {
+.fontItemMenu {
   color: #C61F3E;
   font-size: 20px;
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 400;
   transition: color ease .5s; }
-  .font-menu:hover {
+  .fontItemMenu:hover {
     color: #FCFDFE; }
 
 .titulo-anonymous {

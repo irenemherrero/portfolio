@@ -1,20 +1,13 @@
-.header_bg {
+.headerBackground {
   margin: 0;
   height: 100vh;
   width: 100%;
   background-color: $font-color-1;
   position: relative;
-  background-position: center top;
-  background-size: cover;
-  display: flex;
-  align-content: center;
 }
-.menu{
+.menuBar{
   width: 100vw;
   height: 80px;
-  display: flex;
-  position: fixed;
-  z-index: 100;
 }
 
 .containerMenu{
@@ -43,9 +36,11 @@
 
   }
 }
-.hidden-hidden{
+
+.unactiveInitial{
   display:none;
 }
+
 .hidden{
   position: fixed;
   padding: 0px;
@@ -63,12 +58,10 @@
   from {
       opacity: 1;
       width: 100%;
-
   }
   to {
       opacity: 0;
       width: 0%;
-
   }
 }
 
@@ -76,7 +69,6 @@
 .linkMenu{
   text-decoration: none;
   margin: 10px;
- 
 }
 .listMenu{
   list-style: none;
@@ -84,13 +76,12 @@
   padding: 0;
   display: flex;
   animation-name: list-in;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-iteration-count: 1;
 }
 @keyframes list-in {
   from {
       opacity: 0;
-
   }
   to {
       opacity: 1;

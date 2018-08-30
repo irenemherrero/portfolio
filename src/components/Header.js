@@ -4,56 +4,54 @@ import Hero from './Hero';
 class Header extends Component {
     constructor(props) {
         super(props);
-
         this.state = {
-            openMenu: "hidden-hidden",
-            openList: "hidden-hidden"
+            openMenu: "unactiveInitial",
+            openList: "unactiveInitial"
         }
         this.handleMenu = this.handleMenu.bind(this);
     }
-//Arreglar esto!!
+
     handleMenu() {
-        if (this.state.openMenu === "hidden-hidden"){
+        if (this.state.openMenu === "unactiveInitial") {
             this.setState({
                 openMenu: "containerMenu",
                 openList: "listMenu",
-            })
+            });
         }
-        else if(this.state.openMenu === "hidden") {
+        else if (this.state.openMenu === "hidden") {
             console.log(this.state.openMenu);
             this.setState({
                 openMenu: "containerMenu",
                 openList: "listMenu",
-            })
-        } else if(this.state.openMenu === "containerMenu"){
+            });
+        } else if (this.state.openMenu === "containerMenu") {
             console.log('adios');
             this.setState({
                 openMenu: "hidden",
                 openList: "hiddenMenu"
-            })
+            });
         }
     }
-
+    
     render() {
         return (
-            <header id="top" className="header_bg">
-                <nav className="menu">
+            <header id="top" className="headerBackground">
+                <nav className="menuBar">
                     <div className={this.state.openMenu}>
                         <ul className={this.state.openList}>
                             <li>
-                                <a className="linkMenu font-menu" href="#">Sobre mí</a>
+                                <a className="linkMenu fontItemMenu" href="#">Sobre mí</a>
                             </li>
                             <li>
-                                <a className="linkMenu font-menu" href="#">Proyectos</a>
+                                <a className="linkMenu fontItemMenu" href="#">Proyectos</a>
                             </li>
                             <li>
-                                <a className="linkMenu font-menu" href="#">Contacto</a>
+                                <a className="linkMenu fontItemMenu" href="#">Contacto</a>
                             </li>
                         </ul>
                     </div>
-                    <div className="boton-hamburguesa" href="#" onClick={this.handleMenu}>
+                    <div className="buttonHamburger" href="#" onClick={this.handleMenu}>
                     </div>
-
                 </nav>
                 <Hero />
             </header>
