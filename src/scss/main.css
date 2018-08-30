@@ -88,7 +88,7 @@ body {
 
 .container-footer {
   position: relative;
-  background-color: #304268;
+  background-color: #ffa500;
   height: 128px;
   display: flex;
   flex-direction: column;
@@ -105,37 +105,7 @@ body {
   padding: 7px; }
 
 .corazon {
-  color: #f26002; }
-
-.section-2 {
-  padding: 15px;
-  height: 624px;
-  background-color: #eff9ff; }
-  @media all and (min-width: 768px) {
-    .section-2 {
-      height: 397px;
-      padding: 30px 0;
-      display: flex;
-      flex-direction: column; } }
-  @media all and (min-width: 768px) {
-    .section-2 {
-      height: 427px;
-      padding: 60px 85px;
-      display: flex;
-      flex-direction: column; } }
-
-.reasons-title {
-  margin: 15px auto 22.5px;
-  text-align: center; }
-  @media all and (min-width: 768px) {
-    .reasons-title {
-      margin-top: 0;
-      margin-bottom: 45px;
-      height: 45px;
-      font-size: 26px; } }
-  @media all and (min-width: 1280px) {
-    .reasons-title {
-      font-size: 32px; } }
+  color: #FCFDFE; }
 
 .container-all-reasons {
   display: grid;
@@ -191,6 +161,71 @@ body {
   height: 100px;
   border: 1px solid black; }
 
+.containerSkills {
+  margin: 0;
+  background-color: #FCFDFE; }
+
+.listBackground {
+  width: 100%;
+  height: 30vh;
+  position: absolute;
+  background-color: #ffa500;
+  z-index: 0; }
+
+.generalSkillsList {
+  position: relative;
+  background-color: #FCFDFE;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 40px;
+  padding: 0; }
+
+.itemListGeneralSkills {
+  list-style: none;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0; }
+
+.titleGeneralSkill {
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+  font-size: 700; }
+
+.iconContainer {
+  border: 5px solid #ffa500;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #FCFDFE; }
+
+.fa-laptop-code {
+  left: 2%;
+  top: 40%;
+  position: relative;
+  transform: translate(-50%, -50%);
+  transform: scale(2);
+  color: #ffa500; }
+
+.skillsList {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.skill {
+  list-style: none;
+  height: 30px;
+  display: flex;
+  align-content: center;
+  margin-top: 10px; }
+
+.skillName {
+  margin-top: 5px; }
+
 .buttonHamburger {
   width: 80px;
   height: 80px;
@@ -213,6 +248,7 @@ body {
   transform: translate(-50%, 0%); }
 
 .preTitleEffect {
+  letter-spacing: .15em;
   animation-name: appear;
   animation-timing-function: ease;
   animation-delay: 3s;
@@ -268,7 +304,6 @@ body {
   font-size: 24px;
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 500;
-  letter-spacing: .15em;
   margin: 0; }
 
 .fontTitle {
@@ -285,6 +320,12 @@ body {
   transition: color ease .5s; }
   .fontItemMenu:hover {
     color: #FCFDFE; }
+
+.fontListSkills {
+  color: black;
+  font-size: 20px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400; }
 
 .titulo-anonymous {
   color: #C61F3E; }

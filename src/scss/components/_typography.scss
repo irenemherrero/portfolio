@@ -3,7 +3,6 @@
   font-size: $font-size-xl;
   font-family: $font-family-1;
   font-weight: $font-weight-medium;
-  letter-spacing: .15em;
   margin: 0;
 }
 .fontTitle {
@@ -22,6 +21,12 @@
   &:hover {
     color: $font-color-6;
   }
+}
+.fontListSkills{
+  color: black;
+  font-size: $font-size-big;
+  font-family: $font-family-1;
+  font-weight: $font-weight-regular;
 }
 
 // .font-medium-title {
