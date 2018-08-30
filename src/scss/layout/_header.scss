@@ -83,7 +83,20 @@
   margin:0;
   padding: 0;
   display: flex;
+  animation-name: list-in;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
 }
+@keyframes list-in {
+  from {
+      opacity: 0;
+
+  }
+  to {
+      opacity: 1;
+  }
+}
+
 .hiddenMenu{
 display:none;
 }
