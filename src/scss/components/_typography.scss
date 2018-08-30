@@ -22,13 +22,25 @@
     color: $font-color-6;
   }
 }
+.fontTitleSkill{
+  font-size: $font-size-xl;
+  font-family: Varela Round;
+  font-weight: $font-weight-bold;
+  margin: 0;
+}
 .fontListSkills{
-  color: black;
-  font-size: $font-size-big;
+  color: $font-color-4;
+  font-size: $font-size-med;
   font-family: $font-family-1;
   font-weight: $font-weight-regular;
 }
 
+.fontText{
+  color: $font-color-6;
+  font-size: $font-size-med;
+  font-family: $font-family-1;
+  font-weight: $font-weight-medium;
+}
 // .font-medium-title {
 //   color: $font-color-3;
 //   font-size: $font-size-xl;

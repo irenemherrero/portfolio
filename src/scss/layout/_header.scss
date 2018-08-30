@@ -41,6 +41,7 @@
 
 .hidden{
   position: fixed;
+  z-index: 10;
   padding: 0px;
   display: flex;
   align-items: center;
@@ -66,6 +67,7 @@
 .linkMenu{
   text-decoration: none;
   margin: 10px;
+  color: $font-color-1;
 }
 
 .listMenu{
