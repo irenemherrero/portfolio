@@ -24,7 +24,7 @@
 }
 .fontTitleSkill{
   font-size: $font-size-xl;
-  font-family: Varela Round;
+  font-family: $font-family-3;
   font-weight: $font-weight-bold;
   margin: 0;
 }
@@ -36,42 +36,30 @@
 }
 
 .fontText{
+  color: $font-color-3;
+  font-size: $font-size-big;
+  font-family: $font-family-1;
+  font-weight: $font-weight-regular;
+}
+
+.fontTextHighlight{
+  color: $font-color-1;
+  font-size: $font-size-big;
+  font-family: $font-family-2;
+  font-weight: $font-weight-bold;
+}
+
+.paragraphTitle {
+  color: $font-color-1;
+  font-size: $font-size-gig;
+  font-family: $font-family-3;
+  font-weight: $font-weight-medium;
+  text-align: center;
+}
+
+.footerLink{
   color: $font-color-6;
   font-size: $font-size-med;
   font-family: $font-family-1;
-  font-weight: $font-weight-medium;
+  font-weight: $font-weight-regular;
 }
-// .font-medium-title {
-//   color: $font-color-3;
-//   font-size: $font-size-xl;
-//   font-family: $font-family-2;
-//   font-weight: $font-weight-bold;
-// }
-
-// .font-paragraph-alone {
-//   color: $font-color-4;
-//   font-size: $font-size-med;
-//   font-family: $font-family-1;
-//   font-weight: $font-weight-regular;
-// }
-
-// .font-small-title {
-//   color: $font-color-3;
-//   font-size: $font-size-med;
-//   font-family: $font-family-2;
-//   font-weight: $font-weight-bold;
-// }
-
-// .font-paragraph {
-//   color: $font-color-3;
-//   font-size: $font-size-med;
-//   font-family: $font-family-1;
-//   font-weight: $font-weight-regular;
-// }
-
-// .font-footer-paragraph {
-//   color: $font-color-1;
-//   font-size: $font-size-minim;
-//   font-family: $font-family-1;
-//   font-weight: $font-weight-regular;
-// }

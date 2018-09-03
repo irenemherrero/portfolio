@@ -1,19 +1,13 @@
-.containerSkills{
-    padding: 30px;
-    background-color: $background-color-4; 
-}
-// .containerPresentation{
-//     background-color: $background-color-1;
-// }
-
-.textPresentation{
-    text-align: center;
+.containerSkills{ 
+    width: 80%;
+    margin: auto;
+    
 }
 
 .generalSkillsList{
     position: relative;
     background-color: white;
-    border: 1px solid $background-color-4;
+    border: 1px solid $background-color-5;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 53px 50px;

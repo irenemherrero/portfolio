@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Hero from './Hero';
+import desktop from "../images/desktop2.png"
 
 class Header extends Component {
     constructor(props) {
@@ -40,10 +41,10 @@ class Header extends Component {
                     <div className={this.state.openMenu}>
                         <ul className={this.state.openList}>
                             <li>
-                                <a className="linkMenu fontItemMenu" href="#">Sobre mí</a>
+                                <a className="linkMenu fontItemMenu" href="#presentation">Sobre mí</a>
                             </li>
                             <li>
-                                <a className="linkMenu fontItemMenu" href="#">Proyectos</a>
+                                <a className="linkMenu fontItemMenu" href="#projects">Proyectos</a>
                             </li>
                             <li>
                                 <a className="linkMenu fontItemMenu" href="#">Contacto</a>
@@ -54,6 +55,7 @@ class Header extends Component {
                     </div>
                 </nav>
                 <Hero />
+                <img className="desktop" src={desktop} alt="desktop" />
             </header>
         );
     }

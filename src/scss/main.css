@@ -12,7 +12,7 @@ body {
 
 .headerBackground {
   margin: 0;
-  height: 100vh;
+  height: 130vh;
   width: 100%;
   background-color: #C61F3E;
   position: relative; }
@@ -91,72 +91,84 @@ body {
 .hiddenMenu {
   display: none; }
 
-.container-footer {
+.desktop {
+  width: 70%;
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  animation-name: appearDesktop;
+  animation-timing-function: ease;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+@keyframes appearDesktop {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.containerFooter {
   position: relative;
-  background-color: #C61F3E;
+  background-color: #31302B;
   height: 128px;
   display: flex;
   flex-direction: column;
   text-align: center; }
 
-.footer-line-1 {
-  margin-top: 38px;
-  margin-bottom: 0;
-  padding: 7px; }
-
-.footer-line-2 {
-  margin-top: 0;
-  margin-bottom: 30px;
-  padding: 7px; }
-
-.corazon {
-  color: #fff; }
-
-.container-all-reasons {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr; }
-  @media all and (min-width: 768px) {
-    .container-all-reasons {
-      display: grid;
-      grid-template-columns: 278px 210px 280px;
-      grid-template-rows: 112px 165px;
-      grid-template-areas: "col1 col2 col3" "col4 col5 col6";
-      justify-content: center; } }
-  @media all and (min-width: 1280px) {
-    .container-all-reasons {
-      display: grid;
-      grid-template-columns: 360px 360px 360px; } }
-
-.container-reason {
+.containerNetworks {
+  list-style: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 22.5px; }
-  @media all and (min-width: 768px) {
-    .container-reason {
-      margin: 0; } }
+  justify-content: center; }
 
-.small-title-reason {
-  margin: 0;
-  padding: 3px; }
-  @media all and (min-width: 768px) {
-    .small-title-reason {
-      font-size: 24px; } }
+.iconNW {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 0px 10px;
+  padding: 10px;
+  color: #fff;
+  transition: background-color, color ease .2s; }
+  .iconNW:hover {
+    background-color: #fff;
+    color: #C61F3E; }
 
-.paragraph {
-  text-align: center;
-  width: 180px;
-  height: 63px;
-  margin: 0; }
-  @media all and (min-width: 768px) {
-    .paragraph {
-      font-size: 20px;
-      height: 110px; } }
+.containerLinks {
+  list-style: none;
+  display: flex;
+  justify-content: center; }
+
+.linkWeb {
+  text-decoration: none;
+  margin: 20px;
+  transition: color ease .2s; }
+  .linkWeb:hover {
+    color: #C61F3E; }
+
+.dot {
+  color: #fff;
+  position: relative;
+  bottom: 5px; }
+
+.containerPresentation {
+  padding: 100px 600px;
+  height: 100vh;
+  text-align: justify; }
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden; }
+
+.containerSectionProjects {
+  height: 100vh;
+  padding: 20px; }
 
 .containerProjects {
-  background-color: #EBEEED;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
   height: 100%;
@@ -171,16 +183,13 @@ body {
   height: 200px; }
 
 .containerSkills {
-  padding: 30px;
-  background-color: #31302B; }
-
-.textPresentation {
-  text-align: center; }
+  width: 80%;
+  margin: auto; }
 
 .generalSkillsList {
   position: relative;
   background-color: white;
-  border: 1px solid #31302B;
+  border: 1px solid #EBEEED;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 53px 50px;
@@ -275,7 +284,7 @@ body {
 
 .heroTextContainer {
   position: absolute;
-  width: 70%;
+  width: 30%;
   left: 50%;
   top: 20%;
   transform: translate(-50%, 0%); }
@@ -355,7 +364,7 @@ body {
 
 .fontTitleSkill {
   font-size: 24px;
-  font-family: Varela Round;
+  font-family: "Varela Round", sans-serif;
   font-weight: 700;
   margin: 0; }
 
@@ -366,13 +375,26 @@ body {
   font-weight: 400; }
 
 .fontText {
+  color: #31302B;
+  font-size: 20px;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400; }
+
+.fontTextHighlight {
+  color: #C61F3E;
+  font-size: 20px;
+  font-family: "Open Sans", serif;
+  font-weight: 700; }
+
+.paragraphTitle {
+  color: #C61F3E;
+  font-size: 42px;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 500;
+  text-align: center; }
+
+.footerLink {
   color: #fff;
   font-size: 18px;
   font-family: "M PLUS Rounded 1c", sans-serif;
-  font-weight: 500; }
-
-.titulo-anonymous {
-  color: #C61F3E; }
-
-.fecha {
-  color: #C61F3E; }
+  font-weight: 400; }

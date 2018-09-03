@@ -1,6 +1,6 @@
 .headerBackground {
   margin: 0;
-  height: 100vh;
+  height: 130vh;
   width: 100%;
   background-color: $background-color-1;
   position: relative;
@@ -90,4 +90,23 @@
 
 .hiddenMenu{
 display:none;
+}
+.desktop{
+  width: 70%;
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  animation-name: appearDesktop;
+  animation-timing-function: ease;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes appearDesktop {
+  from {
+     opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

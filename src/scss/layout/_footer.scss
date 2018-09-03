@@ -1,24 +1,54 @@
-.container-footer {
+.containerFooter {
   position: relative;
-  background-color: $background-color-1;
+  background-color: $background-color-4;
   height: 128px;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.footer-line-1 {
-  margin-top: 38px;
-  margin-bottom: 0;
-  padding: 7px;
+.containerNetworks{
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
-.footer-line-2 {
-  margin-top: 0;
-  margin-bottom: 30px;
-  padding: 7px;
+.iconContainerNW{
+
 }
 
-.corazon {
-  color: $color-boton-1;
+.iconNW{
+  border: 2px solid $font-color-6;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 0px 10px;
+  padding: 10px;
+  color: $font-color-6;
+  transition: background-color, color ease .2s;
+    &:hover{
+        background-color: $font-color-6;
+        color: $font-color-1;
+    }
+}
+
+.containerLinks{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.linkWeb{
+  text-decoration: none;
+  margin: 20px;
+  transition: color ease .2s;
+  &:hover{
+      color: $font-color-1;
+  }
+}
+
+.dot{
+  color: $font-color-6;
+  position: relative;
+  bottom: 5px;
 }

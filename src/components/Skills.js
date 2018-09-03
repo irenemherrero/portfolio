@@ -6,14 +6,7 @@ class Skills extends Component {
         return (
             <Fragment>
                 <div className="containerSkills">
-                    {/*<div className="containerPresentation">
-                    <p className="fontText textPresentation">Tras ser profesora de español en España, Bélgica y Portugal durante más de 7 años, me he formado en programación Front-End y he descubierto que “hablar" con ordenadores me gusta tanto como comunicarme con personas.
-                    <br></br> <br></br> 
-                    Conectar con lo que hago es mi motor. Por eso me gusta trabajar en proyectos que contribuyen a mejorar la sociedad.
-                    <br></br> <br></br> 
-                    Soy una persona vital y positiva. Adaptarme a nuevos entornos y equipos es mi mayor cualidad. 
-                    </p>
-        </div>*/}
+                    
                     <ul className="generalSkillsList">
                         <li className="itemListGeneralSkills">
                             <div className="iconContainer">

@@ -9,7 +9,10 @@ class Projects extends Component {
     render() {
         return (
            <Fragment>
-                <div className="containerProjects">
+                <div className='anchor' id='projects'></div>
+                <div className="containerSectionProjects">
+                    <p className='paragraphTitle'>Estos son mis últimos proyectos...</p>
+                    <div className="containerProjects">
                     <a className="imageProject" href="http://beta.adalab.es/dorcas-s3-b-geeks/#/card-generator" target="_blank">
                         <img className="imageWeb" src={web1} alt="Error"/>
                     </a>
@@ -28,6 +31,7 @@ class Projects extends Component {
                     <a className="imageProject" href="http://beta.adalab.es/d-s1-give-me-divs/" target="_blank">
                     <img className="imageWeb" src={web5} alt="Error"/>
                     </a>
+                    </div>
                 </div>
            </Fragment>
         );
