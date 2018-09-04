@@ -1,28 +1,42 @@
 .headerBackground {
   margin: 0;
-  height: 130vh;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   background-color: $background-color-1;
   position: relative;
+  @media all and (min-width: 768px) {
+    height: 1200px;
+  }
+
+  @media all and (min-width: 1280px) {
+    height: 130vh;
+  }
 }
 .menuBar{
   width: 100vw;
-  height: 80px;
+  height: 10vh;
 }
 
 .containerMenu{
   position: fixed;
   z-index: 10;
-  padding: 20px;
   display: flex;
+  padding-right: 10vh;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 80px;
+  width: 100vw;
+  height: 10vh;
   background-color: $background-color-2;
   animation-name: menu;
   animation-duration: 1s;
   animation-iteration-count: 1;
+  @media all and (min-width: 768px) {
+    justify-content: center;
+  }
+
+  @media all and (min-width: 1280px) {
+    justify-content: center;
+  }
 }
 @keyframes menu {
   from {
@@ -47,7 +61,7 @@
   align-items: center;
   justify-content: center;
   width: 0%;
-  height: 80px;
+  height: 10vh;
   background-color: $font-color-2;
   animation-name: menu-out;
   animation-duration: 1s;

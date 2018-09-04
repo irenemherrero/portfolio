@@ -1,7 +1,9 @@
 .containerSkills{ 
-    width: 80%;
+    width: 100vw;
     margin: auto;
-    
+    @media all and (min-width: 1280px) {
+        width: 80%;
+    }
 }
 
 .generalSkillsList{
@@ -9,15 +11,25 @@
     background-color: white;
     border: 1px solid $background-color-5;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 53px 50px;
+    grid-template-rows: 1fr 1fr;
+    margin: 10% 10%;
     padding: 0;
+    @media all and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0fr 0fr;
+        margin-bottom: 0;
+    }
+  
+    @media all and (min-width: 1280px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0fr 0fr;
+    }
 }
 
 .itemListGeneralSkills{
     border: 1px solid $background-color-5;
     list-style: none;
-    padding: 50px 20px;
+    padding: 10% 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,14 +39,15 @@
     letter-spacing: 1px;
     padding-bottom: 20px;
     font-size: $font-weight-bold;
+    text-align: center;
 }
 
 .iconContainer{
     border: 5px solid $color-boton-2;
     color: $color-boton-2;
     border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
     text-align: center;
     margin-bottom: 20px;
     background-color: $font-color-6;
@@ -42,6 +55,15 @@
     &:hover{
         background-color: $color-boton-2;
         color: $font-color-6;
+    }
+    @media all and (min-width: 768px) {
+        height: 100px;
+        width: 100px;
+    }
+  
+    @media all and (min-width: 1280px) {
+        height: 100px;
+        width: 100px;
     }
 }
 
@@ -63,7 +85,6 @@
 
 .skill{
     list-style: none;
-    height: 30px;
     display: flex;
     align-content: center;
     margin-top: 10px;

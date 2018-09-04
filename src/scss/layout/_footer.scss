@@ -1,13 +1,14 @@
 .containerFooter {
   position: relative;
   background-color: $background-color-4;
-  height: 128px;
+  // height: 128px;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
 .containerNetworks{
+  padding: 0;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -36,11 +37,13 @@
   list-style: none;
   display: flex;
   justify-content: center;
+  padding: 0;
+  margin-top: 0;
 }
 
 .linkWeb{
   text-decoration: none;
-  margin: 20px;
+  margin: 6%;
   transition: color ease .2s;
   &:hover{
       color: $font-color-1;

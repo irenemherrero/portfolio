@@ -5,23 +5,25 @@
     visibility: hidden;
 }
 .containerSectionProjects{
-    height: 100vh;
-    padding: 20px;
+    // height: 100vh;
+    padding: 10%;
 }
 .containerProjects{
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
-    height: 100%;
-    padding: 40px;
+    // padding: 40px;
 }
 
 .imageProject{
-    margin: 20px;
+    // margin: 20px;
+    margin: 5% 10%;
+    width: 100%;
 }
 .imageWeb{
     border-radius: 5%;
-    width: 350px;
-    height: 200px; 
+    width: 100%;
+    height: 100%; 
+    
 }

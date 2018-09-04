@@ -12,28 +12,40 @@ body {
 
 .headerBackground {
   margin: 0;
-  height: 130vh;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   background-color: #C61F3E;
   position: relative; }
+  @media all and (min-width: 768px) {
+    .headerBackground {
+      height: 1200px; } }
+  @media all and (min-width: 1280px) {
+    .headerBackground {
+      height: 130vh; } }
 
 .menuBar {
   width: 100vw;
-  height: 80px; }
+  height: 10vh; }
 
 .containerMenu {
   position: fixed;
   z-index: 10;
-  padding: 20px;
   display: flex;
+  padding-right: 10vh;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 80px;
+  width: 100vw;
+  height: 10vh;
   background-color: #ffa500;
   animation-name: menu;
   animation-duration: 1s;
   animation-iteration-count: 1; }
+  @media all and (min-width: 768px) {
+    .containerMenu {
+      justify-content: center; } }
+  @media all and (min-width: 1280px) {
+    .containerMenu {
+      justify-content: center; } }
 
 @keyframes menu {
   from {
@@ -54,7 +66,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 0%;
-  height: 80px;
+  height: 10vh;
   background-color: #ffa500;
   animation-name: menu-out;
   animation-duration: 1s;
@@ -111,12 +123,12 @@ body {
 .containerFooter {
   position: relative;
   background-color: #31302B;
-  height: 128px;
   display: flex;
   flex-direction: column;
   text-align: center; }
 
 .containerNetworks {
+  padding: 0;
   list-style: none;
   display: flex;
   justify-content: center; }
@@ -137,11 +149,13 @@ body {
 .containerLinks {
   list-style: none;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding: 0;
+  margin-top: 0; }
 
 .linkWeb {
   text-decoration: none;
-  margin: 20px;
+  margin: 6%;
   transition: color ease .2s; }
   .linkWeb:hover {
     color: #C61F3E; }
@@ -152,9 +166,12 @@ body {
   bottom: 5px; }
 
 .containerPresentation {
-  padding: 100px 600px;
-  height: 100vh;
+  padding: 10% 15% 0% 15%;
+  width: 100vw;
   text-align: justify; }
+  @media all and (min-width: 1280px) {
+    .containerPresentation {
+      height: 100vh; } }
 
 .anchor {
   display: block;
@@ -163,42 +180,52 @@ body {
   visibility: hidden; }
 
 .containerSectionProjects {
-  height: 100vh;
-  padding: 20px; }
+  padding: 10%; }
 
 .containerProjects {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  flex-wrap: wrap;
-  height: 100%;
-  padding: 40px; }
+  flex-wrap: wrap; }
 
 .imageProject {
-  margin: 20px; }
+  margin: 5% 10%;
+  width: 100%; }
 
 .imageWeb {
   border-radius: 5%;
-  width: 350px;
-  height: 200px; }
+  width: 100%;
+  height: 100%; }
 
 .containerSkills {
-  width: 80%;
+  width: 100vw;
   margin: auto; }
+  @media all and (min-width: 1280px) {
+    .containerSkills {
+      width: 80%; } }
 
 .generalSkillsList {
   position: relative;
   background-color: white;
   border: 1px solid #EBEEED;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 53px 50px;
+  grid-template-rows: 1fr 1fr;
+  margin: 10% 10%;
   padding: 0; }
+  @media all and (min-width: 768px) {
+    .generalSkillsList {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0fr 0fr;
+      margin-bottom: 0; } }
+  @media all and (min-width: 1280px) {
+    .generalSkillsList {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0fr 0fr; } }
 
 .itemListGeneralSkills {
   border: 1px solid #EBEEED;
   list-style: none;
-  padding: 50px 20px;
+  padding: 10% 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -207,14 +234,15 @@ body {
 .titleGeneralSkill {
   letter-spacing: 1px;
   padding-bottom: 20px;
-  font-size: 700; }
+  font-size: 700;
+  text-align: center; }
 
 .iconContainer {
   border: 5px solid #C61F3E;
   color: #C61F3E;
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
   text-align: center;
   margin-bottom: 20px;
   background-color: #fff;
@@ -222,6 +250,14 @@ body {
   .iconContainer:hover {
     background-color: #C61F3E;
     color: #fff; }
+  @media all and (min-width: 768px) {
+    .iconContainer {
+      height: 100px;
+      width: 100px; } }
+  @media all and (min-width: 1280px) {
+    .iconContainer {
+      height: 100px;
+      width: 100px; } }
 
 .icon {
   left: 2%;
@@ -238,7 +274,6 @@ body {
 
 .skill {
   list-style: none;
-  height: 30px;
   display: flex;
   align-content: center;
   margin-top: 10px; }
@@ -269,8 +304,8 @@ body {
   margin-top: 5px; }
 
 .buttonHamburger {
-  width: 80px;
-  height: 80px;
+  width: 10vh;
+  height: 10vh;
   background-color: #C61F3E;
   background-image: url(../images/ico-menu.svg);
   position: fixed;
@@ -284,10 +319,16 @@ body {
 
 .heroTextContainer {
   position: absolute;
-  width: 30%;
-  left: 50%;
-  top: 20%;
-  transform: translate(-50%, 0%); }
+  margin: 10vw;
+  width: 80vw;
+  top: 20vh; }
+  @media all and (min-width: 768px) {
+    .heroTextContainer {
+      width: 60vw;
+      margin-left: 20vw;
+      margin-right: 20vw;
+      margin-top: 150px;
+      top: 10vh; } }
 
 .preTitleEffect {
   letter-spacing: .15em;
@@ -332,41 +373,73 @@ body {
     border-color: #ffa500; } }
 
 .photoMe {
-  height: 250px;
+  height: 50vw;
   margin: 30px;
-  width: 250px;
+  width: 50vw;
   border-radius: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto; }
+  @media all and (min-width: 768px) {
+    .photoMe {
+      height: 300px;
+      width: 300px; } }
+  @media all and (min-width: 1280px) {
+    .photoMe {
+      height: 25vw;
+      width: 25vw; } }
 
 .fontPreTitle {
   color: #C61F3E;
-  font-size: 24px;
+  font-size: 16px;
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 500;
   margin: 0; }
+  @media all and (min-width: 768px) {
+    .fontPreTitle {
+      font-size: 24px; } }
+  @media all and (min-width: 1280px) {
+    .fontPreTitle {
+      font-size: 24px; } }
 
 .fontTitle {
   color: #fff;
-  font-size: 42px;
+  font-size: 24px;
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 500; }
+  @media all and (min-width: 768px) {
+    .fontTitle {
+      font-size: 42px; } }
+  @media all and (min-width: 1280px) {
+    .fontTitle {
+      font-size: 42px; } }
 
 .fontItemMenu {
   color: #C61F3E;
-  font-size: 20px;
+  font-size: 16px;
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 400;
   transition: color ease .5s; }
   .fontItemMenu:hover {
     color: #fff; }
+  @media all and (min-width: 768px) {
+    .fontItemMenu {
+      font-size: 20px; } }
+  @media all and (min-width: 1280px) {
+    .fontItemMenu {
+      font-size: 20px; } }
 
 .fontTitleSkill {
-  font-size: 24px;
+  font-size: 18px;
   font-family: "Varela Round", sans-serif;
   font-weight: 700;
   margin: 0; }
+  @media all and (min-width: 768px) {
+    .fontTitleSkill {
+      font-size: 24px; } }
+  @media all and (min-width: 1280px) {
+    .fontTitleSkill {
+      font-size: 24px; } }
 
 .fontListSkills {
   color: #000;
@@ -376,25 +449,52 @@ body {
 
 .fontText {
   color: #31302B;
-  font-size: 20px;
+  font-size: 16px;
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 400; }
+  @media all and (min-width: 768px) {
+    .fontText {
+      font-size: 20px; } }
+  @media all and (min-width: 1280px) {
+    .fontText {
+      font-size: 42px; } }
 
 .fontTextHighlight {
   color: #C61F3E;
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Open Sans", serif;
   font-weight: 700; }
+  @media all and (min-width: 768px) {
+    .fontTextHighlight {
+      font-size: 20px; } }
+  @media all and (min-width: 1280px) {
+    .fontTextHighlight {
+      font-size: 42px; } }
 
 .paragraphTitle {
   color: #C61F3E;
-  font-size: 42px;
+  font-size: 24px;
   font-family: "Varela Round", sans-serif;
   font-weight: 500;
   text-align: center; }
+  @media all and (min-width: 768px) {
+    .paragraphTitle {
+      font-size: 36px; } }
+  @media all and (min-width: 1280px) {
+    .paragraphTitle {
+      font-size: 42px; } }
 
 .footerLink {
   color: #fff;
-  font-size: 18px;
+  font-size: 14px;
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 400; }
+  @media all and (min-width: 768px) {
+    .footerLink {
+      font-size: 18px; } }
+  @media all and (min-width: 1280px) {
+    .footerLink {
+      font-size: 18px; } }
+
+#root {
+  width: 100%; }

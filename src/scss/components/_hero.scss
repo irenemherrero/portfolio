@@ -1,9 +1,24 @@
 .heroTextContainer {
   position: absolute;
-  width: 30%;
-  left: 50%;
-  top: 20%;
-  transform: translate(-50%, 0%);
+  margin: 10vw;
+  width: 80vw;
+  top: 20vh;
+
+  @media all and (min-width: 768px) {
+    width: 60vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 150px;
+    top: 10vh;
+}
+
+  @media all and (min-width: 1280px) {
+    // position: absolute;
+    // width: 30%;
+    // left: 50%;
+    // top: 20%;
+    // transform: translate(-50%, 0%);
+}
 }
 
 .preTitleEffect{
@@ -47,13 +62,22 @@
 }
 
 .photoMe{
-  height: 250px;
+  height: 50vw;
   margin: 30px;
-  width: 250px;
+  width: 50vw;
   border-radius: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  @media all and (min-width: 768px) {
+    height: 300px;
+    width: 300px;
+}
+
+  @media all and (min-width: 1280px) {
+    height: 25vw;
+    width: 25vw;
+}
 }
 
 
