@@ -4,26 +4,25 @@
   font-family: $font-family-1;
   font-weight: $font-weight-medium;
   margin: 0;
-  @media all and (min-width: 768px) {
+    @media all and (min-width: 768px) {
     font-size: $font-size-xl;
+  }
+    @media all and (min-width: 1280px) {
+    font-size: $font-size-xl;
+  }
 }
 
-  @media all and (min-width: 1280px) {
-    font-size: $font-size-xl;
-}
-}
 .fontTitle {
-  color: $font-color-6;
+  color: $font-color-4;
   font-size: $font-size-xl-tab;
   font-family: $font-family-1;
   font-weight: $font-weight-medium;
-  @media all and (min-width: 768px) {
+    @media all and (min-width: 768px) {
     font-size: $font-size-gig;
-}
-
-  @media all and (min-width: 1280px) {
+  }
+   @media all and (min-width: 1280px) {
     font-size: $font-size-gig;
-}
+  }
 }
 
 .fontItemMenu {
@@ -33,31 +32,33 @@
   font-weight: $font-weight-regular;
   transition: color ease .5s;
   &:hover {
-    color: $font-color-6;
+    color: $font-color-4;
   }
-  @media all and (min-width: 768px) {
+    @media all and (min-width: 768px) {
     font-size: $font-size-big;
-}
+  }
 
   @media all and (min-width: 1280px) {
     font-size: $font-size-big;
+  }
 }
-}
+
 .fontTitleSkill{
   font-size: $font-size-med-tab;
   font-family: $font-family-3;
   font-weight: $font-weight-bold;
   margin: 0;
-  @media all and (min-width: 768px) {
+    @media all and (min-width: 768px) {
     font-size: $font-size-xl;
+  }
+
+    @media all and (min-width: 1280px) {
+    font-size: $font-size-xl;
+  }
 }
 
-  @media all and (min-width: 1280px) {
-    font-size: $font-size-xl;
-}
-}
 .fontListSkills{
-  color: $font-color-4;
+  color: $font-color-3;
   font-size: $font-size-med;
   font-family: $font-family-1;
   font-weight: $font-weight-regular;
@@ -68,13 +69,13 @@
   font-size: $font-size-peq-tab;
   font-family: $font-family-1;
   font-weight: $font-weight-regular;
-  @media all and (min-width: 768px) {
+    @media all and (min-width: 768px) {
     font-size: $font-size-big-tab;
-}
+  }
 
-  @media all and (min-width: 1280px) {
+    @media all and (min-width: 1280px) {
     font-size: $font-size-big-desk;
-}
+  }
 }
 
 .fontTextHighlight{
@@ -82,13 +83,13 @@
   font-size: $font-size-peq-tab;
   font-family: $font-family-2;
   font-weight: $font-weight-bold;
-  @media all and (min-width: 768px) {
+    @media all and (min-width: 768px) {
     font-size: $font-size-big-tab;
-}
+  }
 
-  @media all and (min-width: 1280px) {
+    @media all and (min-width: 1280px) {
     font-size: $font-size-big-desk;
-}
+  }
 }
 
 .paragraphTitle {
@@ -96,26 +97,25 @@
   font-size: $font-size-xl-tab;
   font-family: $font-family-3;
   font-weight: $font-weight-medium;
-  text-align: left;
-  @media all and (min-width: 768px) {
+  text-align: center;
+    @media all and (min-width: 768px) {
     font-size: $font-size-gig-tab;
-}
-
-  @media all and (min-width: 1280px) {
+  }
+    @media all and (min-width: 1280px) {
     font-size: $font-size-gig;
-}
+  }
 }
 
 .footerLink{
-  color: $font-color-6;
+  color: $font-color-4;
   font-size: $font-size-minim-tab;
   font-family: $font-family-1;
   font-weight: $font-weight-regular;
-  @media all and (min-width: 768px) {
+    @media all and (min-width: 768px) {
     font-size: $font-size-med;
-}
+  }
 
-  @media all and (min-width: 1280px) {
+    @media all and (min-width: 1280px) {
     font-size: $font-size-med;
-}
+  }
 }

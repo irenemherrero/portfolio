@@ -13,22 +13,18 @@
   justify-content: center;
 }
 
-.iconContainerNW{
-
-}
-
 .iconNW{
-  border: 2px solid $font-color-6;
+  border: 2px solid $color-boton-1;
   border-radius: 50%;
   width: 40px;
   height: 40px;
   margin: 0px 10px;
   padding: 10px;
-  color: $font-color-6;
+  color: $color-boton-1;
   transition: background-color, color ease .2s;
     &:hover{
-        background-color: $font-color-6;
-        color: $font-color-1;
+        background-color: $color-boton-1;
+        color: $color-boton-2;
     }
 }
 
@@ -56,26 +52,28 @@
 }
 
 .dot1{
-  color: $font-color-6;
+  color: $font-color-4;
   position: relative;
   bottom: 5px;
   @media all and (min-width: 768px) {
     transform: translate(-100%, 30%);
-} 
+  } 
 }
+
 .dot2{
-  color: $font-color-6;
+  color: $font-color-4;
   position: relative;
   bottom: 5px;
   @media all and (min-width: 768px) {
     transform: translate(-50%, 30%);
-} 
+  } 
 }
+
 .dot3{
-  color: $font-color-6;
+  color: $font-color-4;
   position: relative;
   bottom: 5px;
   @media all and (min-width: 768px) {
     transform: translate(40%, 30%);
-} 
+  } 
 }

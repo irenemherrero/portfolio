@@ -5,10 +5,9 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   height: 100%;
-  width: 100%; }
-
-#root {
-  width: 100%; }
+  width: 100%;
+  list-style: none;
+  text-decoration: none; }
 
 .headerBackground {
   margin: 0;
@@ -40,12 +39,6 @@ body {
   animation-name: menu;
   animation-duration: 1s;
   animation-iteration-count: 1; }
-  @media all and (min-width: 768px) {
-    .containerMenu {
-      justify-content: center; } }
-  @media all and (min-width: 1280px) {
-    .containerMenu {
-      justify-content: center; } }
 
 @keyframes menu {
   from {
@@ -223,8 +216,7 @@ body {
       width: 40%; } }
   @media all and (min-width: 1280px) {
     .imageProject {
-      margin: 50px;
-      width: 40%; } }
+      margin: 50px; } }
 
 .imageWeb {
   border-radius: 5%;
@@ -240,8 +232,7 @@ body {
 
 .generalSkillsList {
   position: relative;
-  background-color: white;
-  border: 1px solid #EBEEED;
+  background-color: #fff;
   display: grid;
   grid-template-rows: 1fr 1fr;
   margin: 10% 10%;
@@ -481,7 +472,7 @@ body {
       font-size: 24px; } }
 
 .fontListSkills {
-  color: #000;
+  color: #31302B;
   font-size: 18px;
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 400; }
@@ -515,7 +506,7 @@ body {
   font-size: 24px;
   font-family: "Varela Round", sans-serif;
   font-weight: 500;
-  text-align: left; }
+  text-align: center; }
   @media all and (min-width: 768px) {
     .paragraphTitle {
       font-size: 36px; } }
@@ -534,6 +525,3 @@ body {
   @media all and (min-width: 1280px) {
     .footerLink {
       font-size: 18px; } }
-
-#root {
-  width: 100%; }
