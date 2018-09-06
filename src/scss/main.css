@@ -153,6 +153,10 @@ body {
   padding: 0;
   margin-top: 0; }
 
+@media all and (min-width: 768px) {
+  .itemLink {
+    width: 100px; } }
+
 .linkWeb {
   text-decoration: none;
   margin: 6%;
@@ -160,10 +164,29 @@ body {
   .linkWeb:hover {
     color: #C61F3E; }
 
-.dot {
+.dot1 {
   color: #fff;
   position: relative;
   bottom: 5px; }
+  @media all and (min-width: 768px) {
+    .dot1 {
+      transform: translate(-100%, 30%); } }
+
+.dot2 {
+  color: #fff;
+  position: relative;
+  bottom: 5px; }
+  @media all and (min-width: 768px) {
+    .dot2 {
+      transform: translate(-50%, 30%); } }
+
+.dot3 {
+  color: #fff;
+  position: relative;
+  bottom: 5px; }
+  @media all and (min-width: 768px) {
+    .dot3 {
+      transform: translate(40%, 30%); } }
 
 .containerPresentation {
   padding: 10% 15% 0% 15%;
@@ -185,12 +208,20 @@ body {
 .containerProjects {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap; }
 
 .imageProject {
   margin: 5% 10%;
   width: 100%; }
+  @media all and (min-width: 768px) {
+    .imageProject {
+      margin: 25px;
+      width: 40%; } }
+  @media all and (min-width: 1280px) {
+    .imageProject {
+      margin: 50px;
+      width: 40%; } }
 
 .imageWeb {
   border-radius: 5%;

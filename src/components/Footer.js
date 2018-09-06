@@ -10,10 +10,13 @@ class Footer extends Component {
                     <li className='iconContainerNW'><a href="mailto:irenemherrero@gmail.com" target='_blank'><i className='iconNW fas fa-envelope'></i></a></li>
                 </ul>
                 <ul className="containerLinks">
-                    <li ><a className='linkWeb footerLink' href="#top">Home</a><span class="dot">.</span></li>
-                    <li ><a className='linkWeb footerLink' href="#presentation">Sobre mí</a><span class="dot">.</span></li>
-                    <li ><a className='linkWeb footerLink' href="#projects">Proyectos</a><span class="dot">.</span></li>
-                    <li ><a className='linkWeb footerLink' href="#top">Contacto</a></li>
+                    <li className="itemLink" ><a className='linkWeb footerLink' href="#top">Home</a></li>
+                    <span class="dot1">.</span>
+                    <li className="itemLink"><a className='linkWeb footerLink' href="#presentation">Sobre mí</a></li>
+                    <span class="dot2">.</span>
+                    <li className="itemLink"><a className='linkWeb footerLink' href="#projects">Proyectos</a></li>
+                    <span class="dot3">.</span>
+                    <li className="itemLink"><a className='linkWeb footerLink' href="#top">Contacto</a></li>
                 </ul>
             </footer>    
          );

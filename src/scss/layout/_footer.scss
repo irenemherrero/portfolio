@@ -1,7 +1,6 @@
 .containerFooter {
   position: relative;
   background-color: $background-color-4;
-  // height: 128px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -41,6 +40,12 @@
   margin-top: 0;
 }
 
+.itemLink{
+  @media all and (min-width: 768px) {
+    width: 100px;
+}
+}
+
 .linkWeb{
   text-decoration: none;
   margin: 6%;
@@ -50,8 +55,27 @@
   }
 }
 
-.dot{
+.dot1{
   color: $font-color-6;
   position: relative;
   bottom: 5px;
+  @media all and (min-width: 768px) {
+    transform: translate(-100%, 30%);
+} 
+}
+.dot2{
+  color: $font-color-6;
+  position: relative;
+  bottom: 5px;
+  @media all and (min-width: 768px) {
+    transform: translate(-50%, 30%);
+} 
+}
+.dot3{
+  color: $font-color-6;
+  position: relative;
+  bottom: 5px;
+  @media all and (min-width: 768px) {
+    transform: translate(40%, 30%);
+} 
 }
