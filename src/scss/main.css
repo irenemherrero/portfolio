@@ -487,7 +487,7 @@ body {
       font-size: 20px; } }
   @media all and (min-width: 1280px) {
     .fontText {
-      font-size: 24px; } }
+      font-size: 20px; } }
 
 .fontTextHighlight {
   color: #C61F3E;
@@ -499,7 +499,7 @@ body {
       font-size: 20px; } }
   @media all and (min-width: 1280px) {
     .fontTextHighlight {
-      font-size: 24px; } }
+      font-size: 20px; } }
 
 .paragraphTitle {
   color: #C61F3E;

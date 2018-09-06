@@ -11,11 +11,11 @@ class Footer extends Component {
                 </ul>
                 <ul className="containerLinks">
                     <li className="itemLink" ><a className='linkWeb footerLink' href="#top">Home</a></li>
-                    <span class="dot1">.</span>
+                    <span className="dot1">.</span>
                     <li className="itemLink"><a className='linkWeb footerLink' href="#presentation">Sobre mí</a></li>
-                    <span class="dot2">.</span>
+                    <span className="dot2">.</span>
                     <li className="itemLink"><a className='linkWeb footerLink' href="#projects">Proyectos</a></li>
-                    <span class="dot3">.</span>
+                    <span className="dot3">.</span>
                     <li className="itemLink"><a className='linkWeb footerLink' href="#top">Contacto</a></li>
                 </ul>
             </footer>    
