@@ -192,6 +192,12 @@ body {
   padding: 10% 15% 0% 15%;
   width: 100vw;
   text-align: justify; }
+  @media all and (min-width: 768px) {
+    .containerPresentation {
+      padding: 50px 15% 0px; } }
+  @media all and (min-width: 1280px) {
+    .containerPresentation {
+      padding: 50px 25% 0px; } }
 
 .anchor {
   display: block;
@@ -415,12 +421,12 @@ body {
   margin-right: auto; }
   @media all and (min-width: 768px) {
     .photoMe {
-      height: 300px;
-      width: 300px; } }
+      height: 250px;
+      width: 250px; } }
   @media all and (min-width: 1280px) {
     .photoMe {
-      height: 25vw;
-      width: 25vw; } }
+      height: 20vw;
+      width: 20vw; } }
 
 .fontPreTitle {
   color: #C61F3E;
@@ -509,7 +515,7 @@ body {
   font-size: 24px;
   font-family: "Varela Round", sans-serif;
   font-weight: 500;
-  text-align: center; }
+  text-align: left; }
   @media all and (min-width: 768px) {
     .paragraphTitle {
       font-size: 36px; } }
