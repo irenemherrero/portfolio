@@ -192,9 +192,6 @@ body {
   padding: 10% 15% 0% 15%;
   width: 100vw;
   text-align: justify; }
-  @media all and (min-width: 1280px) {
-    .containerPresentation {
-      height: 100vh; } }
 
 .anchor {
   display: block;
@@ -355,11 +352,16 @@ body {
   top: 20vh; }
   @media all and (min-width: 768px) {
     .heroTextContainer {
-      width: 60vw;
-      margin-left: 20vw;
-      margin-right: 20vw;
+      width: 56vw;
+      margin-left: 23vw;
+      margin-right: 23vw;
       margin-top: 150px;
       top: 10vh; } }
+  @media all and (min-width: 1280px) {
+    .heroTextContainer {
+      width: 40vw;
+      margin-left: 30vw;
+      margin-right: 30vw; } }
 
 .preTitleEffect {
   letter-spacing: .15em;
@@ -488,7 +490,7 @@ body {
       font-size: 20px; } }
   @media all and (min-width: 1280px) {
     .fontText {
-      font-size: 42px; } }
+      font-size: 24px; } }
 
 .fontTextHighlight {
   color: #C61F3E;
@@ -500,7 +502,7 @@ body {
       font-size: 20px; } }
   @media all and (min-width: 1280px) {
     .fontTextHighlight {
-      font-size: 42px; } }
+      font-size: 24px; } }
 
 .paragraphTitle {
   color: #C61F3E;
