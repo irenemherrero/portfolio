@@ -19,7 +19,7 @@
 }
 
 .itemListGeneralSkills{
-    border: 2px solid $background-color-5;
+    border: 2px solid $background-color-3;
     list-style: none;
     padding: 10% 10%;
     display: flex;
@@ -45,7 +45,7 @@
         left: -50%;
     }
     to {
-        left: 5%;
+        left: 10%;
 }
 }
 
@@ -58,10 +58,10 @@
 }
 @keyframes showBox2 {
     from {
-        left: 100%
+        left: 50%
     }
     to {
-        left: 5%;
+        left: 0%;
 }
 }
 

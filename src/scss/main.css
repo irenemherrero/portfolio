@@ -251,7 +251,7 @@ body {
       grid-template-rows: 0fr 0fr; } }
 
 .itemListGeneralSkills {
-  border: 2px solid #EBEEED;
+  border: 2px solid #fff;
   list-style: none;
   padding: 10% 10%;
   display: flex;
@@ -276,7 +276,7 @@ body {
   from {
     left: -50%; }
   to {
-    left: 5%; } }
+    left: 10%; } }
 
 .showBox2 {
   position: relative;
@@ -287,9 +287,9 @@ body {
 
 @keyframes showBox2 {
   from {
-    left: 100%; }
+    left: 50%; }
   to {
-    left: 5%; } }
+    left: 0%; } }
 
 .titleGeneralSkill {
   letter-spacing: 1px;
