@@ -112,7 +112,7 @@ body {
 
 .containerFooter {
   position: relative;
-  background-color: #31302B;
+  background-color: #C61F3E;
   display: flex;
   flex-direction: column;
   text-align: center; }
@@ -152,7 +152,7 @@ body {
   margin: 6%;
   transition: color ease .2s; }
   .linkWeb:hover {
-    color: #C61F3E; }
+    color: #ffa500; }
 
 .dot1 {
   color: #fff;
@@ -232,6 +232,11 @@ body {
 .imageWeb {
   border-radius: 5%;
   width: 100%; }
+
+.containerContact {
+  position: relative;
+  text-align: center;
+  top: -25vh; }
 
 .generalSkillsList {
   position: relative;

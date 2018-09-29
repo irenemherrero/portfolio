@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import Presentation from './Presentation';
 import Skills from './Skills';
 import Projects from './Projects';
+import Contact from './Contact';
 
 class Main extends Component {
   render() {
@@ -10,8 +11,7 @@ class Main extends Component {
         <Presentation/>
         <Skills/>
         <Projects/>
-        {/*<Timeline/>
-        <Contact/>*/}
+        <Contact/>
         </Fragment>
     );
   }
