@@ -1,11 +1,23 @@
 .containerPresentation{
-    padding: 10% 15% 0% 15%;
+    background-color: $background-color-3;
+    padding: auto;
     width: 100vw;
     text-align: justify;
+    height: 50vh;
     @media all and (min-width: 768px) {
-        padding: 50px 15% 0px;
+        padding: auto;
     }
     @media all and (min-width: 1280px) {
-        padding: 50px 25% 0px;
+        padding: auto;
     }
+}
+.presentationText{
+    padding: 5% 15% 0%;
+    width: 80vw;
+    margin: auto;
+    position: relative;
+    top: -20vh;
+    z-index: 10;
+    background-color: $background-color-3;
+    border-radius: 30px;
 }

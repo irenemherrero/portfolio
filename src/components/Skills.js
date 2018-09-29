@@ -29,12 +29,10 @@ class Skills extends Component {
     render() {
         return (
             <Fragment>
-                <div className="containerSkills">
                     <ul className="generalSkillsList">
                         <BoxSkills boxData={technicalSkills}/>
                         <BoxSkills boxData={personalSkills}/>
                     </ul>
-                </div>
             </Fragment>
         );
     }

@@ -1,17 +1,10 @@
-.containerSkills{ 
-    width: 100vw;
-    margin: auto;
-    @media all and (min-width: 1280px) {
-        width: 80%;
-    }
-}
-
 .generalSkillsList{
     position: relative;
+    top: -25vh;
     background-color: $background-color-3;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    margin: 10% 10%;
+    margin: 10% 0%;
     padding: 0;
     @media all and (min-width: 768px) {
         grid-template-columns: 1fr 1fr;
@@ -26,7 +19,7 @@
 }
 
 .itemListGeneralSkills{
-    border: 1px solid $background-color-5;
+    border: 2px solid $background-color-5;
     list-style: none;
     padding: 10% 10%;
     display: flex;

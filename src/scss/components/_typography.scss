@@ -1,7 +1,7 @@
 .fontPreTitle{
   color: $font-color-1;
   font-size: $font-size-peq-tab;
-  font-family: $font-family-1;
+  font-family: $font-family-3;
   font-weight: $font-weight-medium;
   margin: 0;
     @media all and (min-width: 768px) {
@@ -65,12 +65,13 @@
 }
 
 .fontText{
+  text-align: justify;
   color: $font-color-3;
   font-size: $font-size-peq-tab;
   font-family: $font-family-1;
   font-weight: $font-weight-regular;
     @media all and (min-width: 768px) {
-    font-size: $font-size-big-tab;
+    font-size: $font-size-med-tab;
   }
 
     @media all and (min-width: 1280px) {
@@ -84,7 +85,7 @@
   font-family: $font-family-2;
   font-weight: $font-weight-bold;
     @media all and (min-width: 768px) {
-    font-size: $font-size-big-tab;
+    font-size: $font-size-med-tab;
   }
 
     @media all and (min-width: 1280px) {
@@ -94,7 +95,7 @@
 
 .paragraphTitle {
   color: $font-color-1;
-  font-size: $font-size-xl-tab;
+  font-size: $font-size-xl;
   font-family: $font-family-3;
   font-weight: $font-weight-medium;
   text-align: center;
@@ -102,7 +103,7 @@
     font-size: $font-size-gig-tab;
   }
     @media all and (min-width: 1280px) {
-    font-size: $font-size-gig;
+    font-size: $font-size-xxl-desk;
   }
 }
 
