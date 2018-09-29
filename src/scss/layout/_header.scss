@@ -5,10 +5,10 @@
   background-color: $background-color-1;
   position: relative;
   @media all and (min-width: 768px) {
-    height: 1200px;
+    height: 100vh;
   }
   @media all and (min-width: 1280px) {
-    height: 130vh;
+    height: 100vh;
   }
 }
 
@@ -40,10 +40,6 @@
       opacity: 1;
       width: 100%;
   }
-}
-
-.unactiveInitial{
-  display:none;
 }
 
 .hidden{
@@ -95,7 +91,7 @@
   }
 }
 
-.hiddenMenu{
+.hiddenList{
 display:none;
 }
 

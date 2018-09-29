@@ -11,7 +11,7 @@ const menuData = [
     },
     {
         itemName: "Contacto",
-        href: "#",
+        href: "#Contact",
     },
 ]
 
@@ -19,44 +19,30 @@ class Menu extends Component {
 constructor(props) {
     super(props);
     this.state = {
-        openMenu: "unactiveInitial",
-        openList: "unactiveInitial"
+        openMenu: true,
+        openList: true
     }
     this.handleMenu = this.handleMenu.bind(this);
 }
 
 handleMenu() {
-    if (this.state.openMenu === "unactiveInitial") {
         this.setState({
-            openMenu: "containerMenu",
-            openList: "listMenu",
+            openMenu: !this.state.openMenu,
+            openList: !this.state.openList,
         });
-    }
-    else if (this.state.openMenu === "hidden") {
-        console.log(this.state.openMenu);
-        this.setState({
-            openMenu: "containerMenu",
-            openList: "listMenu",
-        });
-    } else if (this.state.openMenu === "containerMenu") {
-        console.log('adios');
-        this.setState({
-            openMenu: "hidden",
-            openList: "hiddenMenu"
-        });
-    }
 }
 
 render() {
+    console.log(this.state.openMenu);
     return (
         <header id="top" className="headerBackground">
             <nav className="menuBar">
-                <div className={this.state.openMenu}>
-                    <ul className={this.state.openList}>
+                <div className={this.state.openMenu ? "containerMenu" : "hidden"}>
+                    <ul className={this.state.openList ? "listMenu" : "hiddenList"}>
                         {
-                            menuData.map(item =>
+                            menuData.map((item, index) =>
                             {return(
-                                <li>
+                                <li kew={index}>
                                     <a className="linkMenu fontItemMenu" href={item.href}>{item.itemName}</a>
                                 </li>
                             )}     

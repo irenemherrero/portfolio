@@ -17,10 +17,10 @@ body {
   position: relative; }
   @media all and (min-width: 768px) {
     .headerBackground {
-      height: 1200px; } }
+      height: 100vh; } }
   @media all and (min-width: 1280px) {
     .headerBackground {
-      height: 130vh; } }
+      height: 100vh; } }
 
 .menuBar {
   width: 100vw;
@@ -47,9 +47,6 @@ body {
   to {
     opacity: 1;
     width: 100%; } }
-
-.unactiveInitial {
-  display: none; }
 
 .hidden {
   position: fixed;
@@ -93,7 +90,7 @@ body {
   to {
     opacity: 1; } }
 
-.hiddenMenu {
+.hiddenList {
   display: none; }
 
 .desktop {
