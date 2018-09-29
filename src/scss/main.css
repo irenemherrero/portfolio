@@ -257,7 +257,39 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0; }
+  margin: 0;
+  background-color: #EBEEED;
+  width: 40vw; }
+
+.hiddeBox {
+  display: none; }
+
+.showBox1 {
+  margin: 0;
+  position: relative;
+  animation-name: showBox1;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+@keyframes showBox1 {
+  from {
+    left: -50%; }
+  to {
+    left: 5%; } }
+
+.showBox2 {
+  position: relative;
+  animation-name: showBox2;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+@keyframes showBox2 {
+  from {
+    left: 100%; }
+  to {
+    left: 5%; } }
 
 .titleGeneralSkill {
   letter-spacing: 1px;
