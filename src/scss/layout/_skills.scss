@@ -28,12 +28,12 @@
     margin: 0;
     background-color: $background-color-5;
     width: 40vw;
+    border-radius: 10px;
 }
 .hiddeBox{
     display: none;
 }
 .showBox1{
-    margin: 0;
     position: relative;
   animation-name: showBox1;
   animation-duration: 1s;
@@ -130,19 +130,15 @@
         background-color: $color-boton-2;
     }
   }
-  @keyframes checkbox-anim {
-    from {
-        background-color: $color-boton-1;
-    }
-    to {
-        background-color: $color-boton-3;
-    }
-  }
 
   .fa-check{
       transform: scale(0.6);
       transform: translate(10%, -15%);
-      color: $color-boton-3;
+      color: $color-boton-2;
+      transition: color ease .1s;
+        &:hover{
+        color: $color-boton-1;
+    }
   }
 
   .skillName{

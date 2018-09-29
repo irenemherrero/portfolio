@@ -65,6 +65,7 @@
 }
 
 .fontText{
+  padding: 3%;
   text-align: justify;
   color: $font-color-3;
   font-size: $font-size-peq-tab;
@@ -97,7 +98,7 @@
   color: $font-color-1;
   font-size: $font-size-xl;
   font-family: $font-family-3;
-  font-weight: $font-weight-medium;
+  font-weight: $font-weight-bold;
   text-align: center;
     @media all and (min-width: 768px) {
     font-size: $font-size-gig-tab;

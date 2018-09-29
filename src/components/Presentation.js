@@ -13,6 +13,7 @@ class Presentation extends Component {
                     <br></br>
 
                     <p className='paragraphTitle'>¿Qué puedo aportar a tu proyecto?</p>
+
                 </div>
         );
     }
