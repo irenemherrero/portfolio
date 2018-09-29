@@ -3,7 +3,6 @@ import photoMe from "../images/foto_perfil_prop.jpg"
 
 
 class Hero extends Component {
-
     render() {
         return (
             <Fragment>

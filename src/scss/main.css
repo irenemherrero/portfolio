@@ -204,11 +204,13 @@ body {
 .anchor {
   display: block;
   position: relative;
-  top: -50px;
+  top: -30vh;
   visibility: hidden; }
 
 .containerSectionProjects {
-  padding: 10%; }
+  position: relative;
+  padding: 10%;
+  top: -30vh; }
 
 .containerProjects {
   display: flex;
@@ -229,8 +231,7 @@ body {
 
 .imageWeb {
   border-radius: 5%;
-  width: 100%;
-  height: 100%; }
+  width: 100%; }
 
 .generalSkillsList {
   position: relative;
@@ -251,7 +252,7 @@ body {
       grid-template-rows: 0fr 0fr; } }
 
 .itemListGeneralSkills {
-  border: 2px solid #fff;
+  border: 5px solid #fff;
   list-style: none;
   padding: 10% 10%;
   display: flex;
@@ -299,17 +300,17 @@ body {
 
 .iconContainer {
   border: 5px solid #C61F3E;
-  color: #C61F3E;
+  color: #fff;
   border-radius: 50%;
   height: 70px;
   width: 70px;
   text-align: center;
   margin-bottom: 20px;
-  background-color: #fff;
+  background-color: #C61F3E;
   transition: background-color, color ease .2s; }
   .iconContainer:hover {
-    background-color: #C61F3E;
-    color: #fff; }
+    background-color: #EBEEED;
+    color: #C61F3E; }
   @media all and (min-width: 768px) {
     .iconContainer {
       height: 100px;

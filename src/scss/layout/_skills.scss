@@ -19,7 +19,7 @@
 }
 
 .itemListGeneralSkills{
-    border: 2px solid $background-color-3;
+    border: 5px solid $background-color-3;
     list-style: none;
     padding: 10% 10%;
     display: flex;
@@ -74,17 +74,17 @@
 
 .iconContainer{
     border: 5px solid $color-boton-2;
-    color: $color-boton-2;
+    color: $color-boton-1;
     border-radius: 50%;
     height: 70px;
     width: 70px;
     text-align: center;
     margin-bottom: 20px;
-    background-color: $background-color-3;
+    background-color: $background-color-1;
     transition: background-color, color ease .2s;
     &:hover{
-        background-color: $color-boton-2;
-        color: $color-boton-1;
+        background-color: $background-color-5;
+        color: $color-boton-2;
     }
     @media all and (min-width: 768px) {
         height: 100px;
