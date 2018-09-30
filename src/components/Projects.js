@@ -11,34 +11,34 @@ const projectsData = [
     {
         webRef: 'http://beta.adalab.es/dorcas-s4-tpr/',
         photoSrc: web0,
-        photoAlt: 'Enlace a formulario realizado para la empresa Triporate',
+        description: 'Formulario realizado para la empresa Triporate con React y SASS',
     },
     {
         webRef: 'http://beta.adalab.es/dorcas-s3-b-geeks/#/card-generator',
         photoSrc: web1,
-        photoAlt: 'Enlace a aplicación de generación de tarjetas con React',
+        description: 'Aplicación de generación de tarjetas con React',
     },
     {
         webRef: 'http://beta.adalab.es/dorcas-s3-evaluacion-final-irenemherrero/#/',
         photoSrc: web2,
-        photoAlt: 'Enlace a buscador de personajes de HarryPotter',
+        description: 'Buscador de personajes de HarryPotter con JS Vainilla y SASS',
     },
     {
         webRef: 'http://beta.adalab.es/dorcas-s2-evaluacion-final-irenemherrero/',
         photoSrc: web3,
-        photoAlt: 'Enlace a buscador de series',
+        description: 'Buscador de series con JS Vainilla y SASS',
     },
     {
-        webRef:  'http://beta.adalab.es/dorcas-s2-tarjetas-martirio/',
+        webRef: 'http://beta.adalab.es/dorcas-s2-tarjetas-martirio/',
         photoSrc: web4,
-        photoAlt: 'Enlace a aplicación de generación de tarjetas con JS Vainilla',
+        description: 'Aplicación de generación de tarjetas con JS Vainilla y SASS',
     },
     {
-        webRef:  'http://beta.adalab.es/d-s1-give-me-divs/',
+        webRef: 'http://beta.adalab.es/d-s1-give-me-divs/',
         photoSrc: web5,
-        photoAlt: 'Enlace a proyecto de web grupal con HTML y CSS (solo maquetación)',
+        description: 'Maquetación de web corporativa con HTML y CSS (solo maquetación)',
     },
-]
+];
 
 class Projects extends Component {
     render() {
@@ -49,17 +49,17 @@ class Projects extends Component {
                 <div className="containerSectionProjects">
                     <p className='paragraphTitle'>Estos son mis últimos proyectos...</p>
                     <div className="containerProjects">
-                        {projectsData.map((web,index) => {
-                            return(
-                            <ProjectItem key={index} webRef={web.webRef} photoSrc={web.photoSrc} photoAlt = {web.photoAlt}/>
+                        {projectsData.map((web, index) => {
+                            return (
+                                <ProjectItem key={index} webRef={web.webRef} photoSrc={web.photoSrc} description={web.description} />
                             );
                         })
-                        }
+                        };
                     </div>
                 </div>
             </Fragment>
         );
-    }
-}
+    };
+};
 
 export default Projects;

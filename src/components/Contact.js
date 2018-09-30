@@ -9,7 +9,7 @@ class Contact extends Component {
                 <a className="linkMenu" href="mailto:irenemherrero@gmail.com" target="_blank"> irenemherrero@gmail.com </a>
             </div> 
          );
-    }
-}
+    };
+};
  
 export default Contact;

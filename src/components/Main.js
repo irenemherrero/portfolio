@@ -12,9 +12,9 @@ class Main extends Component {
         <Skills/>
         <Projects/>
         <Contact/>
-        </Fragment>
+      </Fragment>
     );
-  }
-}
+  };
+};
 
 export default Main;

@@ -1,20 +1,20 @@
-import React, { Component, Fragment } from 'react';
-import photoMe from "../images/foto_perfil_prop.jpg"
-
+import React, { Component, Fragment } from "react";
+import photoMe from "../images/foto_perfil_prop.jpg";
 
 class Hero extends Component {
-    render() {
-        return (
-            <Fragment>
-                <div className="heroTextContainer">
-                    <h1 className="fontPreTitle preTitleEffect">Junior Front-End Developer</h1>
-                    <h2 className="fontTitle typewriter">Soy Irene Mateo.</h2>
-                    <img className="photoMe" src={photoMe} alt="irene mateo" />
-                </div>
-            </Fragment>
-
-        );
-    }
-}
+  render() {
+    return (
+      <Fragment>
+        <div className="heroTextContainer">
+          <h1 className="fontPreTitle preTitleEffect">
+            Junior Front-End Developer
+          </h1>
+          <h2 className="fontTitle typewriter">Soy Irene Mateo.</h2>
+          <img className="photoMe" src={photoMe} alt="Irene Mateo, Junior FrontEnd Developer" />
+        </div>
+      </Fragment>
+    );
+  };
+};
 
 export default Hero;

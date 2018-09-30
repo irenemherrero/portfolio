@@ -12,7 +12,7 @@ const technicalSkills = {
         'JavaScript Vainilla',
         'ES6 y React',
     ],
-}
+};
 
 const personalSkills = {
     title: 'Habilidades personales',
@@ -25,19 +25,19 @@ const personalSkills = {
         'Habilidades comunicativas',
         'Planificación y organización',
     ],
-}
+};
 
 class Skills extends Component {
     render() {
         return (
             <Fragment>
-                    <ul className="generalSkillsList">
-                        <BoxSkills boxData={technicalSkills}/>
-                        <BoxSkills boxData={personalSkills}/>
-                    </ul>
+                <ul className="generalSkillsList">
+                    <BoxSkills boxData={technicalSkills} />
+                    <BoxSkills boxData={personalSkills} />
+                </ul>
             </Fragment>
         );
-    }
-}
+    };
+};
 
 export default Skills;

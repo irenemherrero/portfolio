@@ -219,6 +219,7 @@ body {
   flex-wrap: wrap; }
 
 .imageProject {
+  position: relative;
   margin: 5% 10%;
   width: 100%; }
   @media all and (min-width: 768px) {
@@ -230,13 +231,32 @@ body {
       margin: 50px; } }
 
 .imageWeb {
-  border-radius: 5%;
-  width: 100%; }
+  display: block;
+  border-radius: 10px;
+  width: 100%;
+  border: 3px solid #EBEEED; }
+
+.projectsSpan {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: .8;
+  color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  background: transparent;
+  transition: background ease .3s;
+  transition: all .5s; }
+  .projectsSpan:hover {
+    background: #C61F3E;
+    color: #fff; }
 
 .containerContact {
   position: relative;
   text-align: center;
-  top: -25vh; }
+  top: -30vh; }
 
 .generalSkillsList {
   position: relative;
