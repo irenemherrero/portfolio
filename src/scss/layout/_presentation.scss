@@ -1,8 +1,13 @@
+.anchor{
+    display: block;
+    visibility: hidden;
+    height: 60px;
+}
 .containerPresentation{
     background-color: $background-color-3;
     padding: auto;
     width: 100vw;
-    text-align: justify;
+    text-align: center;
     height: 50vh;
     @media all and (min-width: 768px) {
         padding: auto;
@@ -13,11 +18,19 @@
 }
 .presentationText{
     padding: 5% 15% 0%;
-    width: 80vw;
+    width: 100vw;
     margin: auto;
-    position: relative;
-    top: -20vh;
     z-index: 10;
     background-color: $background-color-3;
-    border-radius: 30px;
+    @media all and (min-width: 768px) {
+        width: 80vw;
+    }
+}
+
+.fa-smile{
+    margin-left: 50%;
+    transform: scale(3);
+    color: $color-boton-2;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }

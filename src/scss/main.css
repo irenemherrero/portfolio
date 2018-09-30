@@ -11,16 +11,11 @@ body {
 
 .headerBackground {
   margin: 0;
-  height: 120vh;
+  height: 100vh;
   width: 100vw;
+  min-height: 600px;
   background-color: #C61F3E;
   position: relative; }
-  @media all and (min-width: 768px) {
-    .headerBackground {
-      height: 120vh; } }
-  @media all and (min-width: 1280px) {
-    .headerBackground {
-      height: 120vh; } }
 
 .menuBar {
   width: 100vw;
@@ -34,7 +29,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 10vh;
+  height: 60px;
   background-color: #ffa500;
   animation-name: menu;
   animation-duration: 1s;
@@ -56,7 +51,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 0%;
-  height: 10vh;
+  height: 60px;
   background-color: #ffa500;
   animation-name: menu-out;
   animation-duration: 1s;
@@ -178,11 +173,16 @@ body {
     .dot3 {
       transform: translate(40%, 30%); } }
 
+.anchor {
+  display: block;
+  visibility: hidden;
+  height: 60px; }
+
 .containerPresentation {
   background-color: #fff;
   padding: auto;
   width: 100vw;
-  text-align: justify;
+  text-align: center;
   height: 50vh; }
   @media all and (min-width: 768px) {
     .containerPresentation {
@@ -193,26 +193,30 @@ body {
 
 .presentationText {
   padding: 5% 15% 0%;
-  width: 80vw;
+  width: 100vw;
   margin: auto;
-  position: relative;
-  top: -20vh;
   z-index: 10;
-  background-color: #fff;
-  border-radius: 30px; }
+  background-color: #fff; }
+  @media all and (min-width: 768px) {
+    .presentationText {
+      width: 80vw; } }
+
+.fa-smile {
+  margin-left: 50%;
+  transform: scale(3);
+  color: #C61F3E;
+  margin-top: 30px;
+  margin-bottom: 30px; }
 
 .anchor {
   display: block;
-  position: relative;
-  top: -30vh;
   visibility: hidden; }
 
 .containerSectionProjects {
-  position: relative;
-  padding: 10%;
-  top: -30vh; }
+  padding: 5% 10%; }
 
 .containerProjects {
+  top: 800px;
   display: flex;
   align-items: flex-start;
   justify-content: left;
@@ -221,7 +225,7 @@ body {
 .imageProject {
   position: relative;
   margin: 5% 10%;
-  width: 100%; }
+  width: 110%; }
   @media all and (min-width: 768px) {
     .imageProject {
       margin: 25px;
@@ -237,6 +241,9 @@ body {
   border: 3px solid #EBEEED; }
 
 .projectsSpan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -244,49 +251,56 @@ body {
   right: 0;
   opacity: .8;
   color: transparent;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   background: transparent;
   transition: background ease .3s;
-  transition: all .5s; }
+  transition: all .5s;
+  text-align: center; }
   .projectsSpan:hover {
-    background: #C61F3E;
+    background: #292510;
     color: #fff; }
 
 .containerContact {
-  position: relative;
   text-align: center;
-  top: -30vh; }
+  margin-bottom: 100px;
+  padding: 20px; }
 
 .generalSkillsList {
-  position: relative;
-  top: -25vh;
   background-color: #fff;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  margin: 10% 0%;
-  padding: 0; }
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
   @media all and (min-width: 768px) {
     .generalSkillsList {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 0fr 0fr;
-      margin-bottom: 0; } }
+      margin-bottom: 0;
+      flex-direction: row; } }
   @media all and (min-width: 1280px) {
     .generalSkillsList {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 0fr 0fr; } }
 
 .itemListGeneralSkills {
-  border: 5px solid #fff;
   list-style: none;
-  padding: 10% 10%;
+  border: 5px solid #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
   background-color: #EBEEED;
-  width: 40vw;
-  border-radius: 10px; }
+  border-radius: 10px;
+  width: 80vw;
+  padding: 30px; }
+  @media all and (min-width: 768px) {
+    .itemListGeneralSkills {
+      height: 450px;
+      width: 40vw;
+      margin: 0;
+      padding: 10% 10%; } }
 
 .hiddeBox {
   display: none; }
@@ -302,7 +316,13 @@ body {
   from {
     left: -50%; }
   to {
-    left: 10%; } }
+    left: 0%; } }
+  @media all and (min-width: 768px) {
+    @keyframes showBox1 {
+      from {
+        left: -50%; }
+      to {
+        left: 10%; } } }
 
 .showBox2 {
   position: relative;
@@ -313,9 +333,17 @@ body {
 
 @keyframes showBox2 {
   from {
-    left: 50%; }
+    display: none;
+    left: 100%; }
   to {
+    display: block;
     left: 0%; } }
+  @media all and (min-width: 768px) {
+    @keyframes showBox2 {
+      from {
+        left: 50%; }
+      to {
+        left: 10%; } } }
 
 .titleGeneralSkill {
   letter-spacing: 1px;
@@ -331,6 +359,7 @@ body {
   width: 70px;
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 20px;
   background-color: #C61F3E;
   transition: background-color, color ease .2s; }
   .iconContainer:hover {
@@ -338,12 +367,8 @@ body {
     color: #C61F3E; }
   @media all and (min-width: 768px) {
     .iconContainer {
-      height: 100px;
-      width: 100px; } }
-  @media all and (min-width: 1280px) {
-    .iconContainer {
-      height: 100px;
-      width: 100px; } }
+      height: 80px;
+      width: 70px; } }
 
 .icon {
   left: 2%;
@@ -362,7 +387,8 @@ body {
   list-style: none;
   display: flex;
   align-content: center;
-  margin-top: 10px; }
+  margin-top: 10px;
+  font-size: 16px; }
 
 .checkbox {
   margin-right: 10px;
@@ -377,7 +403,7 @@ body {
 
 .fa-check {
   transform: scale(0.6);
-  transform: translate(10%, -15%);
+  transform: translate(20%, -5%);
   color: #C61F3E;
   transition: color ease .1s; }
   .fa-check:hover {
@@ -387,8 +413,8 @@ body {
   margin-top: 5px; }
 
 .buttonHamburger {
-  width: 10vh;
-  height: 10vh;
+  width: 60px;
+  height: 60px;
   background-color: #C61F3E;
   background-image: url(../images/ico-menu.svg);
   position: fixed;
@@ -398,7 +424,8 @@ body {
   background-position: center;
   background-size: 30%;
   display: flex;
-  flex-grow: 1; }
+  flex-grow: 1;
+  cursor: pointer; }
 
 .heroTextContainer {
   position: absolute;
@@ -461,17 +488,17 @@ body {
     border-color: #ffa500; } }
 
 .photoMe {
-  height: 50vw;
+  height: 200px;
   margin: 30px;
-  width: 50vw;
+  width: 200px;
   border-radius: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto; }
   @media all and (min-width: 768px) {
     .photoMe {
-      height: 250px;
-      width: 250px; } }
+      height: 200px;
+      width: 200px; } }
   @media all and (min-width: 1280px) {
     .photoMe {
       height: 20vw;
@@ -537,7 +564,7 @@ body {
 
 .fontText {
   padding: 3%;
-  text-align: justify;
+  text-align: center;
   color: #31302B;
   font-size: 16px;
   font-family: "M PLUS Rounded 1c", sans-serif;

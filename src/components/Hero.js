@@ -10,11 +10,15 @@ class Hero extends Component {
             Junior Front-End Developer
           </h1>
           <h2 className="fontTitle typewriter">Soy Irene Mateo.</h2>
-          <img className="photoMe" src={photoMe} alt="Irene Mateo, Junior FrontEnd Developer" />
+          <img
+            className="photoMe"
+            src={photoMe}
+            alt="Irene Mateo, Junior FrontEnd Developer"
+          />
         </div>
       </Fragment>
     );
-  };
-};
+  }
+}
 
 export default Hero;

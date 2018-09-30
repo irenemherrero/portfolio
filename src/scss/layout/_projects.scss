@@ -1,17 +1,14 @@
 .anchor{
     display: block;
-    position: relative;
-    top: -30vh;
     visibility: hidden;
 }
 
 .containerSectionProjects{
-    position: relative;
-    padding: 10%;
-    top: -30vh;
+    padding: 5% 10%;
 }
 
 .containerProjects{
+    top: 800px;
     display: flex;
     align-items: flex-start;
     justify-content: left;
@@ -21,17 +18,13 @@
 .imageProject{
     position: relative;
     margin: 5% 10%;
-    width: 100%;
-    
+    width: 110%;
     @media all and (min-width: 768px) {
         margin: 25px;
         width: 40%;
     }
     @media all and (min-width: 1280px) {
         margin: 50px;       
-    }
-    &:hover{
-
     }
 }
 
@@ -43,27 +36,30 @@
 }
 
 .projectsSpan{
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  opacity: .8; 
-  color: transparent;
-  padding: 20px;
-  border-radius: 10px;
-  background: transparent;
-  transition: background ease .3s;
-  transition: all .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: .8; 
+    color: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    background: transparent;
+    transition: background ease .3s;
+    transition: all .5s;
+    text-align: center;
 &:hover {
-    background: $background-color-1;
+    background: $background-color-4;
     color: $font-color-4;
   }
 }
 
-.containerContact{
-    position: relative;
+.containerContact{ 
     text-align: center;
-    top: -30vh;
-
+    margin-bottom: 100px;
+    padding: 20px;
 }

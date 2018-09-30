@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
 
 class ItemSkills extends Component {
-
     render() {
         const { skill } = this.props;
         return (

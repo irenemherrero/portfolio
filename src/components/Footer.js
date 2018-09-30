@@ -16,7 +16,7 @@ class Footer extends Component {
                     <span className="dot2">.</span>
                     <li className="itemLink"><a className='linkWeb footerLink' href="#projects">Proyectos</a></li>
                     <span className="dot3">.</span>
-                    <li className="itemLink"><a className='linkWeb footerLink' href="#Contact">Contacto</a></li>
+                    <li className="itemLink"><a className='linkWeb footerLink' href="#contact">Contacto</a></li>
                 </ul>
             </footer>    
          );

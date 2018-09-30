@@ -21,7 +21,7 @@ class App extends Component {
   handleScroll() {
     const distanceToTop = document.body.getBoundingClientRect().top;
     console.log(distanceToTop);
-    if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
       document.getElementById("skillsBox1").className = "showBox1";
       document.getElementById("skillsBox2").className = "showBox2";
     } else {

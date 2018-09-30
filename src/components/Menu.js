@@ -11,7 +11,7 @@ const menuData = [
     },
     {
         itemName: "Contacto",
-        href: "#Contact",
+        href: "#contact",
     },
 ];
 
