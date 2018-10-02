@@ -1,10 +1,10 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import IconSkills from './IconSkills';
 import ItemSkills from './ItemSkills';
 
 class BoxSkills extends Component {
     render() {
-        console.log(this.props.boxData.skills);
         const { title, icon, id } = this.props.boxData;
         const [skill1, skill2, skill3, skill4, skill5] = this.props.boxData.skills;
         return (
@@ -24,6 +24,10 @@ class BoxSkills extends Component {
             </div>
         );
     };
+};
+
+BoxSkills.propTypes = {
+    boxData: PropTypes.object,
 };
 
 export default BoxSkills;

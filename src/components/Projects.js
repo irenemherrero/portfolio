@@ -38,7 +38,7 @@ const projectsData = [
     webRef: "http://beta.adalab.es/d-s1-give-me-divs/",
     photoSrc: web5,
     description:
-      "Maquetación de web corporativa con HTML y CSS (solo maquetación)"
+      "Maquetación de web corporativa con HTML y SASS"
   }
 ];
 

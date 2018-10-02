@@ -1,8 +1,9 @@
 .anchor{
     display: block;
     visibility: hidden;
-    height: 60px;
+    height: 40px;
 }
+
 .containerPresentation{
     background-color: $background-color-3;
     padding: auto;
@@ -16,6 +17,7 @@
         padding: auto;
     }
 }
+
 .presentationText{
     padding: 5% 15% 0%;
     width: 100vw;

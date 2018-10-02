@@ -7,7 +7,7 @@ class Presentation extends Component {
             <Fragment>
                 <div className='anchor' id="presentation" />
                 <div className="presentationText">
-                    <i class="far fa-smile"></i>
+                    <i className="far fa-smile"></i>
                     <p className='paragraphTitle'>Encantada de conocerte.</p>
                     <p className="fontText">Soy Irene Mateo Herrero, programadora Front-End Junior formada en Adalab (Madrid).
                     </p>

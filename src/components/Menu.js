@@ -33,7 +33,6 @@ class Menu extends Component {
     };
 
     render() {
-        console.log(this.state.openMenu);
         return (
             <header id="top" className="headerBackground">
                 <nav className="menuBar">
@@ -42,7 +41,7 @@ class Menu extends Component {
                             {
                                 menuData.map((item, index) => {
                                     return (
-                                        <li kew={index}>
+                                        <li key={index}>
                                             <a className="linkMenu fontItemMenu" href={item.href}>{item.itemName}</a>
                                         </li>
                                     );

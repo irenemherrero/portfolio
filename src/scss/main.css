@@ -136,50 +136,24 @@ body {
   display: flex;
   justify-content: center;
   padding: 0;
-  margin-top: 0; }
-
-@media all and (min-width: 768px) {
-  .itemLink {
-    width: 100px; } }
+  margin-top: 0;
+  width: 100%; }
 
 .linkWeb {
   text-decoration: none;
   margin: 5%;
+  white-space: nowrap;
   transition: color ease .2s; }
   .linkWeb:hover {
     color: #ffa500; }
-
-.dot1 {
-  color: #fff;
-  position: relative;
-  bottom: 3px; }
   @media all and (min-width: 768px) {
-    .dot1 {
-      transform: translate(-100%, 30%);
-      bottom: 6px; } }
-
-.dot2 {
-  color: #fff;
-  position: relative;
-  bottom: 3px; }
-  @media all and (min-width: 768px) {
-    .dot2 {
-      transform: translate(-50%, 30%);
-      bottom: 6px; } }
-
-.dot3 {
-  color: #fff;
-  position: relative;
-  bottom: 3px; }
-  @media all and (min-width: 768px) {
-    .dot3 {
-      transform: translate(40%, 30%);
-      bottom: 6px; } }
+    .linkWeb {
+      margin: 15%; } }
 
 .anchor {
   display: block;
   visibility: hidden;
-  height: 60px; }
+  height: 40px; }
 
 .containerPresentation {
   background-color: #fff;
@@ -216,10 +190,11 @@ body {
   visibility: hidden; }
 
 .containerSectionProjects {
+  margin-top: 0px;
   padding: 5% 10%; }
 
 .containerProjects {
-  top: 800px;
+  top: 700px;
   display: flex;
   align-items: flex-start;
   justify-content: left;
@@ -262,13 +237,8 @@ body {
   text-align: center; }
   @media all and (min-width: 768px) {
     .projectsSpan:hover {
-      background: #292510;
+      background: #EBEEED;
       color: #fff; } }
-
-.containerContact {
-  text-align: center;
-  margin-bottom: 100px;
-  padding: 20px; }
 
 .generalSkillsList {
   background-color: #fff;
@@ -408,6 +378,11 @@ body {
 
 .skillName {
   margin-top: 5px; }
+
+.containerContact {
+  text-align: center;
+  margin-bottom: 100px;
+  padding: 20px; }
 
 .buttonHamburger {
   width: 60px;

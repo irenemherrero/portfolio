@@ -1,4 +1,5 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class IconSkills extends Component {
     render() {
@@ -10,5 +11,9 @@ class IconSkills extends Component {
         );
     };
 };
+
+IconSkills.propTypes = {
+    icon: PropTypes.string,
+  };
 
 export default IconSkills;

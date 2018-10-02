@@ -1,4 +1,5 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class ItemSkills extends Component {
     render() {
@@ -11,6 +12,10 @@ class ItemSkills extends Component {
             </li>
         );
     };
+};
+
+ItemSkills.propTypes = {
+    skill: PropTypes.string,
 };
 
 export default ItemSkills;

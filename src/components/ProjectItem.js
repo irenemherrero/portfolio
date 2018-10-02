@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class ProjectItem extends Component {
     render() {
-        console.log(this.props.description);
         const { webRef, photoSrc, description } = this.props;
         return (
             <a className="imageProject" href={webRef} target="_blank">
@@ -14,5 +14,11 @@ class ProjectItem extends Component {
         );
     }
 }
+
+ProjectItem.propTypes = {
+    webRef: PropTypes.string,
+    photoSrc: PropTypes.string,
+    description: PropTypes.string,
+};
 
 export default ProjectItem;
