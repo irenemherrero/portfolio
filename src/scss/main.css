@@ -144,7 +144,7 @@ body {
 
 .linkWeb {
   text-decoration: none;
-  margin: 6%;
+  margin: 5%;
   transition: color ease .2s; }
   .linkWeb:hover {
     color: #ffa500; }
@@ -152,26 +152,29 @@ body {
 .dot1 {
   color: #fff;
   position: relative;
-  bottom: 5px; }
+  bottom: 3px; }
   @media all and (min-width: 768px) {
     .dot1 {
-      transform: translate(-100%, 30%); } }
+      transform: translate(-100%, 30%);
+      bottom: 6px; } }
 
 .dot2 {
   color: #fff;
   position: relative;
-  bottom: 5px; }
+  bottom: 3px; }
   @media all and (min-width: 768px) {
     .dot2 {
-      transform: translate(-50%, 30%); } }
+      transform: translate(-50%, 30%);
+      bottom: 6px; } }
 
 .dot3 {
   color: #fff;
   position: relative;
-  bottom: 5px; }
+  bottom: 3px; }
   @media all and (min-width: 768px) {
     .dot3 {
-      transform: translate(40%, 30%); } }
+      transform: translate(40%, 30%);
+      bottom: 6px; } }
 
 .anchor {
   display: block;
@@ -322,12 +325,13 @@ body {
         left: 10%; } } }
 
 .showBox2 {
-  position: relative;
-  animation-name: showBox2;
-  animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards; }
+  position: relative; }
   @media all and (min-width: 768px) {
+    .showBox2 {
+      animation-name: showBox2;
+      animation-duration: 1s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards; }
     @keyframes showBox2 {
       from {
         left: 50%; }
@@ -592,7 +596,7 @@ body {
 
 .footerLink {
   color: #fff;
-  font-size: 14px;
+  font-size: 12px;
   font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: 400; }
   @media all and (min-width: 768px) {

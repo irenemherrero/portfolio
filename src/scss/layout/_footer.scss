@@ -44,7 +44,7 @@
 
 .linkWeb{
   text-decoration: none;
-  margin: 6%;
+  margin: 5%;
   transition: color ease .2s;
   &:hover{
       color: $font-color-2;
@@ -54,26 +54,29 @@
 .dot1{
   color: $font-color-4;
   position: relative;
-  bottom: 5px;
+  bottom: 3px;
   @media all and (min-width: 768px) {
     transform: translate(-100%, 30%);
+    bottom: 6px;
   } 
 }
 
 .dot2{
   color: $font-color-4;
   position: relative;
-  bottom: 5px;
+  bottom: 3px;
   @media all and (min-width: 768px) {
     transform: translate(-50%, 30%);
+    bottom: 6px;
   } 
 }
 
 .dot3{
   color: $font-color-4;
   position: relative;
-  bottom: 5px;
+  bottom: 3px;
   @media all and (min-width: 768px) {
     transform: translate(40%, 30%);
+    bottom: 6px;
   } 
 }
