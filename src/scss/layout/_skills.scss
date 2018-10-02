@@ -95,14 +95,14 @@
     margin-bottom: 20px;
     margin-top: 20px;
     background-color: $background-color-1;
-    transition: background-color, color ease .2s;
-    &:hover{
-        background-color: $background-color-5;
-        color: $color-boton-2;
-    }
     @media all and (min-width: 768px) {
-        height: 80px;
-        width: 70px;
+    transition: background-color, color ease .2s;
+    height: 80px;
+    width: 70px;    
+        &:hover{
+            background-color: $background-color-5;
+            color: $color-boton-2;
+        }   
     }
 }
 
@@ -136,9 +136,11 @@
     border-radius: 50%;
     height: 28px;
     width: 28px;
-    transition: background-color ease .3s;
-    &:hover{
-        background-color: $color-boton-2;
+    @media all and (min-width: 768px) {
+        transition: background-color ease .3s;
+        &:hover{
+            background-color: $color-boton-2;
+        }
     }
   }
 
@@ -146,10 +148,12 @@
       transform: scale(0.6);
       transform: translate(20%, -5%);
       color: $color-boton-2;
-      transition: color ease .1s;
-        &:hover{
-        color: $color-boton-1;
-    }
+      @media all and (min-width: 768px) {
+        transition: color ease .1s;
+            &:hover{
+                color: $color-boton-1;
+            }
+        }
   }
 
   .skillName{

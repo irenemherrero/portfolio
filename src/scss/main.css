@@ -353,15 +353,15 @@ body {
   text-align: center;
   margin-bottom: 20px;
   margin-top: 20px;
-  background-color: #C61F3E;
-  transition: background-color, color ease .2s; }
-  .iconContainer:hover {
-    background-color: #EBEEED;
-    color: #C61F3E; }
+  background-color: #C61F3E; }
   @media all and (min-width: 768px) {
     .iconContainer {
+      transition: background-color, color ease .2s;
       height: 80px;
-      width: 70px; } }
+      width: 70px; }
+      .iconContainer:hover {
+        background-color: #EBEEED;
+        color: #C61F3E; } }
 
 .icon {
   left: 2%;
@@ -389,18 +389,22 @@ body {
   border: 3px solid #C61F3E;
   border-radius: 50%;
   height: 28px;
-  width: 28px;
-  transition: background-color ease .3s; }
-  .checkbox:hover {
-    background-color: #C61F3E; }
+  width: 28px; }
+  @media all and (min-width: 768px) {
+    .checkbox {
+      transition: background-color ease .3s; }
+      .checkbox:hover {
+        background-color: #C61F3E; } }
 
 .fa-check {
   transform: scale(0.6);
   transform: translate(20%, -5%);
-  color: #C61F3E;
-  transition: color ease .1s; }
-  .fa-check:hover {
-    color: #fff; }
+  color: #C61F3E; }
+  @media all and (min-width: 768px) {
+    .fa-check {
+      transition: color ease .1s; }
+      .fa-check:hover {
+        color: #fff; } }
 
 .skillName {
   margin-top: 5px; }
