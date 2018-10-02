@@ -12,6 +12,7 @@ class App extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+    window.location = "https://irenemherrero.github.io/";
   };
 
   componentWillUnmount() {
