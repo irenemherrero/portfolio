@@ -48,7 +48,7 @@ class Projects extends Component {
       <Fragment>
         <div className="anchor" id="projects" />
         <div className="containerSectionProjects">
-          <p className="paragraphTitle">Estos son mis últimos proyectos...</p>
+          <p className="paragraphTitle">Mis últimos proyectos</p>
           <div className="containerProjects">
             {projectsData.map((web, index) => {
               return (
