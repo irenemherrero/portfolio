@@ -52,10 +52,12 @@
     transition: background ease .3s;
     transition: all .5s;
     text-align: center;
-&:hover {
-    background: $background-color-4;
-    color: $font-color-4;
-  }
+    @media all and (min-width: 768px) {
+        &:hover {
+            background: $background-color-4;
+            color: $font-color-4;
+        }    
+    }
 }
 
 .containerContact{ 
