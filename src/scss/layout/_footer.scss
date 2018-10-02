@@ -39,13 +39,10 @@
 
 .linkWeb{
   text-decoration: none;
-  margin: 5%;
+  margin: 15px;
   white-space:nowrap; 
   transition: color ease .2s;
   &:hover{
       color: $font-color-2;
-  }
-  @media all and (min-width: 768px) {
-    margin: 15%;
   }
 }

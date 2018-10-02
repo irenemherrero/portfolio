@@ -66,6 +66,7 @@
   text-decoration: none;
   margin: 10px;
   color: $font-color-1;
+  white-space:nowrap;
 }
 
 .listMenu{
@@ -87,7 +88,7 @@
 }
 
 .hiddenList{
-display:none;
+  display:none;
 }
 
 .desktop{

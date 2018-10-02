@@ -68,7 +68,8 @@ body {
 .linkMenu {
   text-decoration: none;
   margin: 10px;
-  color: #C61F3E; }
+  color: #C61F3E;
+  white-space: nowrap; }
 
 .listMenu {
   list-style: none;
@@ -141,14 +142,11 @@ body {
 
 .linkWeb {
   text-decoration: none;
-  margin: 5%;
+  margin: 15px;
   white-space: nowrap;
   transition: color ease .2s; }
   .linkWeb:hover {
     color: #ffa500; }
-  @media all and (min-width: 768px) {
-    .linkWeb {
-      margin: 15%; } }
 
 .anchor {
   display: block;
