@@ -236,7 +236,7 @@ body {
   @media all and (min-width: 768px) {
     .projectsSpan:hover {
       background: #EBEEED;
-      color: #fff; } }
+      color: #333; } }
 
 .generalSkillsList {
   background-color: #fff;
