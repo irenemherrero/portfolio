@@ -1,15 +1,6 @@
 name: Generate version
 on:
   push:
-    branches: [ master ]
-  
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      name: Bump version
-on:
-  push:
     branches:
       - master
     paths-ignore:
